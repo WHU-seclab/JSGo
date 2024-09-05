@@ -1,8 +1,8 @@
 ## Usages:
 The project contains three main parts:
-1. **Profile**, see [src/profile](https://github.com/JSGos/JSGo/blob/main/src/profile/readme.md)
-2. **Replay**, see [src/replay](https://github.com/JSGos/JSGo/blob/main/src/replay/readme.md)
-3. **Mutate**, see [src/mutate](https://github.com/JSGos/JSGo/blob/main/src/mutate/readme.md)
+1. **Profile**, see [src/profile](https://github.com/WHU-seclab/JSGo/blob/main/src/profile/readme.md)
+2. **Replay**, see [src/replay](https://github.com/WHU-seclab/JSGo/blob/main/src/replay/readme.md)
+3. **Mutate**, see [src/mutate](https://github.com/WHU-seclab/JSGo/blob/main/src/mutate/readme.md)
 
 Additionally, we provide an example usage in each phase. The example demonstrates triggering a prototype pollution vulnerability in parse-server. Users can test other applications following the provided documents and examples.
 
