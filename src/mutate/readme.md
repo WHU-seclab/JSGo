@@ -72,12 +72,13 @@ The finally generated payload is stored in curl_attack.sh, which is a PoC mutate
 An example is provided in `pp`.
 The example demonstrates how to configure two `config.json` to exploit a prototype pollution vulnerability in [parse-server](https://github.com/parse-community/parse-server). 
 
-In `example.sh`, `main.py` is invoked twice with two different `config.json` files. 
-
 ```bash
 python main.py pp/config.json
 python main.py pp/config1.json
 ```
+
+In `example.sh`, `main.py` is invoked twice with two different `config.json` files. 
+
 
 - The first invocation mutates the initial input, causing its execution to satisfy the first diverging condition.
 - Subsequently, the second invocation manipulates the API generated from the first run. This manipulation ensures that its execution satisfies the second (also final) diverging condition, ultimately leading to triggering the prototype vulnerability at the specified sink location.
