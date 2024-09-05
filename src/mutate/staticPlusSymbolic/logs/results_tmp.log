@@ -1,0 +1,176 @@
+|checker| success id$0$color:red$: 
+==========================
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 3	function computeComplex(A, B) {
+    let result = 0;
+    if (A>3) {
+        B=B*A
+    }
+    else {
+        if (B>A) {
+            A=A-1;
+        }
+        else {
+            A=2*A
+        }
+    }
+    result=A+B;
+    return result;
+}
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 10	            A=A-1;
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 16	    result=A+B;
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 23	    sink_jsfuzz(C);
+
+|checker| success id$1$color:red$: 
+==========================
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 20	function processInputsAndCheckHash(A, B) {
+    let C = computeComplex(A, B);
+    let expectedHash = 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3';
+    sink_jsfuzz(C);
+    if (crypto.createHash('sha256').update(String(C)).digest('hex') === expectedHash) { // We want to generate new inputs to satisfy this complex condition
+        return true;
+    } else {
+        return false;
+    }
+}
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 10	            A=A-1;
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 16	    result=A+B;
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 23	    sink_jsfuzz(C);
+
+|checker| success id$2$color:red$: 
+==========================
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 3	function computeComplex(A, B) {
+    let result = 0;
+    if (A>3) {
+        B=B*A
+    }
+    else {
+        if (B>A) {
+            A=A-1;
+        }
+        else {
+            A=2*A
+        }
+    }
+    result=A+B;
+    return result;
+}
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 16	    result=A+B;
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 23	    sink_jsfuzz(C);
+
+|checker| success id$3$color:red$: 
+==========================
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 20	function processInputsAndCheckHash(A, B) {
+    let C = computeComplex(A, B);
+    let expectedHash = 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3';
+    sink_jsfuzz(C);
+    if (crypto.createHash('sha256').update(String(C)).digest('hex') === expectedHash) { // We want to generate new inputs to satisfy this complex condition
+        return true;
+    } else {
+        return false;
+    }
+}
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 16	    result=A+B;
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 23	    sink_jsfuzz(C);
+
+|checker| success id$0$color:red$: 
+==========================
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 20	function processInputsAndCheckHash(A, B) {
+    let C = computeComplex(A, B);
+    let expectedHash = 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3';
+    sink_jsfuzz(C);
+    if (crypto.createHash('sha256').update(String(C)).digest('hex') === expectedHash) { // We want to generate new inputs to satisfy this complex condition
+        return true;
+    } else {
+        return false;
+    }
+}
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 10	            A=A-1;
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 16	    result=A+B;
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 23	    sink_jsfuzz(C);
+
+|checker| success id$1$color:red$: 
+==========================
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 3	function computeComplex(A, B) {
+    let result = 0;
+    if (A>3) {
+        B=B*A
+    }
+    else {
+        if (B>A) {
+            A=A-1;
+        }
+        else {
+            A=2*A
+        }
+    }
+    result=A+B;
+    return result;
+}
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 10	            A=A-1;
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 16	    result=A+B;
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 23	    sink_jsfuzz(C);
+
+|checker| success id$2$color:red$: 
+==========================
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 3	function computeComplex(A, B) {
+    let result = 0;
+    if (A>3) {
+        B=B*A
+    }
+    else {
+        if (B>A) {
+            A=A-1;
+        }
+        else {
+            A=2*A
+        }
+    }
+    result=A+B;
+    return result;
+}
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 16	    result=A+B;
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 23	    sink_jsfuzz(C);
+
+|checker| success id$3$color:red$: 
+==========================
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 20	function processInputsAndCheckHash(A, B) {
+    let C = computeComplex(A, B);
+    let expectedHash = 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3';
+    sink_jsfuzz(C);
+    if (crypto.createHash('sha256').update(String(C)).digest('hex') === expectedHash) { // We want to generate new inputs to satisfy this complex condition
+        return true;
+    } else {
+        return false;
+    }
+}
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 16	    result=A+B;
+$FilePath$/pppj/src/mutate/staticPlusSymbolic/example_1.js
+Line 23	    sink_jsfuzz(C);
+

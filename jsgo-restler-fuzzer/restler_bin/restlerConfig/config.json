@@ -1,0 +1,9 @@
+{
+  "SwaggerSpecFilePath": [
+    "/parse-server/api-docs.json"
+  ],
+  "DataFuzzing": true,
+  "CustomDictionaryFilePath": "dict.json",
+  "EngineSettingsFilePath": "engine_settings.json",
+  "AnnotationFilePath": "annotations.json"
+}

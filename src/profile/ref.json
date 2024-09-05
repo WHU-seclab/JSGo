@@ -1,0 +1,29 @@
+{
+  "Parse.Push.spec.js": [
+    "should properly send push",
+    "should properly send push with lowercaseIncrement",
+    "should not allow clients to query _PushStatus",
+    "should allow master key to query _PushStatus"
+  ],
+  "PushWorker.spec.js": [
+    "tracks push status per UTC offsets",
+    "tracks push status per UTC offsets with negative offsets"
+  ],
+  "CloudCode.spec.js": [
+    "beforeSave should not sanitize database"
+  ],
+  "PushController.spec.js": [
+    "properly increment badges",
+    "properly increment badges by more than 1",
+    "properly set badges to 1",
+    "properly set badges to 1 with complex query #2903 #3022",
+    "properly creates _PushStatus",
+    "properly creates _PushStatus without serverURL",
+    "should support full RESTQuery for increment",
+    "should support object type for alert",
+    "should not schedule push when not configured",
+    "should not enqueue push when device token is not set",
+    "should support localized payload data",
+    "should update audiences"
+  ]
+}

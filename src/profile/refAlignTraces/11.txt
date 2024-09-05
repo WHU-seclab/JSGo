@@ -1,0 +1,10 @@
+Entry: PushController.spec.js, Value: properly set badges to 1 with complex query #2903 #3022
+Entry: PushController.spec.js, Value: properly set badges to 1 with complex query #2903 #3022
+
+    at writeToStackTraceFile (/parse-server/lib/Controllers/DatabaseController.js:7:19)
+    at expandResultOnKeyPath (/parse-server/lib/Controllers/DatabaseController.js:267:3)
+    at /parse-server/lib/Controllers/DatabaseController.js:292:7
+    at Array.forEach (<anonymous>)
+    at sanitizeDatabaseResult (/parse-server/lib/Controllers/DatabaseController.js:283:31)
+    at /parse-server/lib/Controllers/DatabaseController.js:613:16
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)

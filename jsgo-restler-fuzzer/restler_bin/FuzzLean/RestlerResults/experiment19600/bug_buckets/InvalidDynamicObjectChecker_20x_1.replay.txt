@@ -1,0 +1,26 @@
+################################################################################
+ InvalidDynamicObjectChecker_20x
+
+ Hash: InvalidDynamicObjectChecker_20x_e27b747a6f56273a1f116af3ca5813e0578ed4ee
+
+ To attempt to reproduce this bug using restler, run restler with the command
+ line option of --replay_log <path_to_this_log>.
+ If an authentication token is required, you must also specify the token_refresh_cmd.
+
+ This log may contain specific values for IDs or names that were generated
+ during fuzzing, using the fuzzing dictionary. Such names will be re-played
+ without modification. You must update the replay log manually with any changes
+ required to execute the requests in your environment (for example, replacing
+ pre-created account, subscription, or other resource IDs, as needed).
+################################################################################
+
+-> POST /parse/classes/GameScore HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nX-Parse-Application-Id: APPLICATION_ID\r\nX-Parse-REST-API-Key: MASTER_KEY\r\nContent-Type: application/json\r\n\r\n{\n    "score":1.23,\n    "playerName":"fuzzstring",\n    "cheatMode":true}\r\n
+! producer_timing_delay 0
+! max_async_wait_time 20
+PREVIOUS RESPONSE: 'HTTP/1.1 201 Created\r\nX-Powered-By: Express\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS\r\nAccess-Control-Allow-Headers: X-Parse-Master-Key, X-Parse-REST-API-Key, X-Parse-Javascript-Key, X-Parse-Application-Id, X-Parse-Client-Version, X-Parse-Session-Token, X-Requested-With, X-Parse-Revocable-Session, X-Parse-Request-Id, Content-Type, Pragma, Cache-Control\r\nAccess-Control-Expose-Headers: X-Parse-Job-Status-Id, X-Parse-Push-Status-Id\r\nLocation: http://localhost:1337/parse/classes/GameScore/lTP3L9TgRT\r\nContent-Type: application/json; charset=utf-8\r\nContent-Length: 64\r\nETag: W/"40-hQLgAC+qmnuwZRQVO62YJwbtrvE"\r\nDate: Sat, 09 Dec 2023 14:14:43 GMT\r\nConnection: keep-alive\r\nKeep-Alive: timeout=5\r\n\r\n{"objectId":"lTP3L9TgRT","createdAt":"2023-12-09T14:14:43.191Z"}'
+
+-> DELETE /parse/classes/GameScore/lTP3L9TgRT?injected_query_string=123 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nX-Parse-Application-Id: APPLICATION_ID\r\nX-Parse-REST-API-Key: MASTER_KEY\r\n\r\n
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 200 OK\r\nX-Powered-By: Express\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS\r\nAccess-Control-Allow-Headers: X-Parse-Master-Key, X-Parse-REST-API-Key, X-Parse-Javascript-Key, X-Parse-Application-Id, X-Parse-Client-Version, X-Parse-Session-Token, X-Requested-With, X-Parse-Revocable-Session, X-Parse-Request-Id, Content-Type, Pragma, Cache-Control\r\nAccess-Control-Expose-Headers: X-Parse-Job-Status-Id, X-Parse-Push-Status-Id\r\nContent-Type: application/json; charset=utf-8\r\nContent-Length: 2\r\nETag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"\r\nDate: Sat, 09 Dec 2023 14:14:43 GMT\r\nConnection: keep-alive\r\nKeep-Alive: timeout=5\r\n\r\n{}'
+

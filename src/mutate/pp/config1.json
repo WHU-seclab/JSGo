@@ -1,0 +1,10 @@
+{
+  "variable_names": "key", 
+  "source_file": "/Apps/parse-server/lib/Controllers/DatabaseController.js", 
+  "line_number_before": 267,
+  "line_number_after": 272,
+  "commands": "./pp/run.sh,./pp/stop.sh,curl_reach.sh,./pp/testsuite.sh",
+  "next_hit_target": 269,
+  "sink_line_number": [269, 276],
+  "sink_type": "pp"
+} 

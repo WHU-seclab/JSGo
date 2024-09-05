@@ -1,0 +1,724 @@
+All args:
+print: False
+vul_type: os_command
+prototype_pollution: False
+module: False
+exit: False
+single_branch: False
+run_all: False
+function_timeout: None
+timeout: None
+package_timeout: None
+call_limit: 3
+entry_func: None
+list: None
+install: False
+max_rep: 4
+run_all_files: False
+no_prioritized_funcs: False
+entrance_func: None
+pre_timeout: 30
+exported_func_timeout: None
+no_exports: False
+max_file_stack: None
+skip_func: None
+allow_func: None
+add_sinks: None
+print_all_pathes: False
+run_env: ./tmp_env/
+no_file_based: False
+parallel: None
+auto_type: False
+export: None
+nodejs: False
+gc: False
+gen: False
+more_output: False
+run_test: False
+dataflow: False
+babel: None
+input_file: ./example_1.js
+Analyzing ./example_1.js
+Current node: 1 Program (line: 1, parent: 0, funcid: null)
+Make 2 CFG_FUNC_ENTRY Artificial node
+Make 3 CFG_FUNC_EXIT Artificial node
+Current node: 5 VariableDeclaration (line: 1, parent: 4, funcid: 1)
+Current node: 5 VariableDeclarator (line: 1, parent: 4, funcid: 1)
+Current node: 6 Identifier (line: 1, parent: 5, funcid: 1)
+Current node: 8 CallExpression (line: 1, parent: 5, funcid: 1)
+Current node: 10 Identifier (line: 1, parent: 8, funcid: 1)
+Current node: 12 Literal (line: 1, parent: 11, funcid: 1)
+Current node: 13 FunctionDeclaration (line: 3, parent: 4, funcid: 1)
+Make 14 CFG_FUNC_ENTRY Artificial node
+Make 15 CFG_FUNC_EXIT Artificial node
+Current node: 16 Identifier (line: 3, parent: 13, funcid: 13)
+Current node: 21 Identifier (line: 3, parent: 19, funcid: 13)
+Current node: 25 Identifier (line: 3, parent: 23, funcid: 13)
+Current node: 27 BlockStatement (line: 3, parent: 13, funcid: 13)
+Current node: 28 VariableDeclaration (line: 4, parent: 27, funcid: 13)
+Current node: 28 VariableDeclarator (line: 4, parent: 27, funcid: 13)
+Current node: 29 Identifier (line: 4, parent: 28, funcid: 13)
+Current node: 31 Literal (line: 4, parent: 28, funcid: 13)
+Current node: 32 IfStatement (line: 5, parent: 27, funcid: 13)
+Current node: 34 BinaryExpression (line: 5, parent: 33, funcid: 13)
+Current node: 35 Identifier (line: 5, parent: 34, funcid: 13)
+Current node: 37 Literal (line: 5, parent: 34, funcid: 13)
+Current node: 38 BlockStatement (line: 5, parent: 33, funcid: 13)
+Current node: 39 ExpressionStatement (line: 6, parent: 38, funcid: 13)
+Current node: 39 AssignmentExpression (line: 6, parent: 38, funcid: 13)
+Current node: 40 Identifier (line: 6, parent: 39, funcid: 13)
+Current node: 42 BinaryExpression (line: 6, parent: 39, funcid: 13)
+Current node: 43 Identifier (line: 6, parent: 42, funcid: 13)
+Current node: 45 Identifier (line: 6, parent: 42, funcid: 13)
+Current node: 49 BlockStatement (line: 8, parent: 47, funcid: 13)
+Current node: 50 IfStatement (line: 9, parent: 49, funcid: 13)
+Current node: 52 BinaryExpression (line: 9, parent: 51, funcid: 13)
+Current node: 53 Identifier (line: 9, parent: 52, funcid: 13)
+Current node: 55 Identifier (line: 9, parent: 52, funcid: 13)
+Current node: 57 BlockStatement (line: 9, parent: 51, funcid: 13)
+Current node: 58 ExpressionStatement (line: 10, parent: 57, funcid: 13)
+Current node: 58 AssignmentExpression (line: 10, parent: 57, funcid: 13)
+Current node: 59 Identifier (line: 10, parent: 58, funcid: 13)
+Current node: 61 BinaryExpression (line: 10, parent: 58, funcid: 13)
+Current node: 62 Identifier (line: 10, parent: 61, funcid: 13)
+Current node: 64 Literal (line: 10, parent: 61, funcid: 13)
+Current node: 67 BlockStatement (line: 12, parent: 65, funcid: 13)
+Current node: 68 ExpressionStatement (line: 13, parent: 67, funcid: 13)
+Current node: 68 AssignmentExpression (line: 13, parent: 67, funcid: 13)
+Current node: 69 Identifier (line: 13, parent: 68, funcid: 13)
+Current node: 71 BinaryExpression (line: 13, parent: 68, funcid: 13)
+Current node: 72 Literal (line: 13, parent: 71, funcid: 13)
+Current node: 73 Identifier (line: 13, parent: 71, funcid: 13)
+Current node: 75 ExpressionStatement (line: 16, parent: 27, funcid: 13)
+Current node: 75 AssignmentExpression (line: 16, parent: 27, funcid: 13)
+Current node: 76 Identifier (line: 16, parent: 75, funcid: 13)
+Current node: 78 BinaryExpression (line: 16, parent: 75, funcid: 13)
+Current node: 79 Identifier (line: 16, parent: 78, funcid: 13)
+Current node: 81 Identifier (line: 16, parent: 78, funcid: 13)
+Current node: 83 ReturnStatement (line: 17, parent: 27, funcid: 13)
+Current node: 84 Identifier (line: 17, parent: 83, funcid: 13)
+Current node: 88 FunctionDeclaration (line: 20, parent: 4, funcid: 1)
+Make 89 CFG_FUNC_ENTRY Artificial node
+Make 90 CFG_FUNC_EXIT Artificial node
+Current node: 91 Identifier (line: 20, parent: 88, funcid: 88)
+Current node: 96 Identifier (line: 20, parent: 94, funcid: 88)
+Current node: 100 Identifier (line: 20, parent: 98, funcid: 88)
+Current node: 102 BlockStatement (line: 20, parent: 88, funcid: 88)
+Current node: 103 VariableDeclaration (line: 21, parent: 102, funcid: 88)
+Current node: 103 VariableDeclarator (line: 21, parent: 102, funcid: 88)
+Current node: 104 Identifier (line: 21, parent: 103, funcid: 88)
+Current node: 106 CallExpression (line: 21, parent: 103, funcid: 88)
+Current node: 108 Identifier (line: 21, parent: 106, funcid: 88)
+Current node: 110 Identifier (line: 21, parent: 109, funcid: 88)
+Current node: 112 Identifier (line: 21, parent: 109, funcid: 88)
+Current node: 114 VariableDeclaration (line: 22, parent: 102, funcid: 88)
+Current node: 114 VariableDeclarator (line: 22, parent: 102, funcid: 88)
+Current node: 115 Identifier (line: 22, parent: 114, funcid: 88)
+Current node: 117 Literal (line: 22, parent: 114, funcid: 88)
+Current node: 118 ExpressionStatement (line: 23, parent: 102, funcid: 88)
+Current node: 118 CallExpression (line: 23, parent: 102, funcid: 88)
+Current node: 120 Identifier (line: 23, parent: 118, funcid: 88)
+Current node: 122 Identifier (line: 23, parent: 121, funcid: 88)
+Current node: 124 IfStatement (line: 24, parent: 102, funcid: 88)
+Current node: 126 BinaryExpression (line: 24, parent: 125, funcid: 88)
+Current node: 127 CallExpression (line: 24, parent: 126, funcid: 88)
+Current node: 128 CallExpression (line: 24, parent: 127, funcid: 88)
+Current node: 129 CallExpression (line: 24, parent: 128, funcid: 88)
+Current node: 130 Identifier (line: 24, parent: 129, funcid: 88)
+Current node: 132 Identifier (line: 24, parent: 129, funcid: 88)
+Current node: 134 Literal (line: 24, parent: 133, funcid: 88)
+Current node: 135 Identifier (line: 24, parent: 128, funcid: 88)
+Current node: 137 CallExpression (line: 24, parent: 136, funcid: 88)
+Current node: 139 Identifier (line: 24, parent: 137, funcid: 88)
+Current node: 141 Identifier (line: 24, parent: 140, funcid: 88)
+Current node: 143 Identifier (line: 24, parent: 127, funcid: 88)
+Current node: 145 Literal (line: 24, parent: 144, funcid: 88)
+Current node: 146 Identifier (line: 24, parent: 126, funcid: 88)
+Current node: 148 BlockStatement (line: 24, parent: 125, funcid: 88)
+Current node: 149 ReturnStatement (line: 25, parent: 148, funcid: 88)
+Current node: 150 Literal (line: 25, parent: 149, funcid: 88)
+Current node: 155 BlockStatement (line: 26, parent: 153, funcid: 88)
+Current node: 156 ReturnStatement (line: 27, parent: 155, funcid: 88)
+Current node: 157 Literal (line: 27, parent: 156, funcid: 88)
+Current node: 162 ExpressionStatement (line: 31, parent: 4, funcid: 1)
+Current node: 162 AssignmentExpression (line: 31, parent: 4, funcid: 1)
+Current node: 163 MemberExpression (line: 31, parent: 162, funcid: 1)
+Current node: 164 Identifier (line: 31, parent: 163, funcid: 1)
+Current node: 166 Identifier (line: 31, parent: 163, funcid: 1)
+Current node: 167 Identifier (line: 31, parent: 162, funcid: 1)
+
+GENERATE OBJECT GRAPH: 0
+REGISTER 13 to 1
+REGISTER 88 to 1
+FILE ./example_1.js BEGINS
+Declare function ./example_1.js as 1329
+FUNCTION 1 ./example_1.js STARTS, SCOPE 1346, DECL OBJ 1329, this OBJs ['171'], branches []
+BLOCK 4 STARTS, SCOPE 1357
+Declare function computeComplex as 1358
+Declare function processInputsAndCheckHash as 1374
+Running Line 1 to 1
+Var require handle result -> ['1048']
+	1048: {'export': False, 'labels:label': 'Object', 'type': 'function', 'pythonfunc': <function handle_require at 0x7f0b89c395e0>}
+9 handle result: obj_nodes=['1048'], name=require, name_nodes=['1055']
+Running Python function 1048 <function handle_require at 0x7f0b89c395e0>...
+[NodeHandleResult(value_sources=[[]], values=['crypto'])]
+Trying to require package crypto.
+
+CALLS 5 -> 1043 (Line 1 -> Line ?) require
+8 handle result: obj_nodes=[], name=None, name_nodes=[]
+Name node crypto not found, create name node
+Var crypto handle result -> ['1319']
+	1319: {'export': True, 'labels:label': 'Object', 'type': 'undefined', 'code': 'undefined'}
+6 handle result: obj_nodes=['1319'], name=crypto, name_nodes=['1390']
+Right side handling error at statement 5
+Running Line 3 to 18
+Running Line 20 to 29
+Running Line 31 to 31
+Var processInputsAndCheckHash handle result -> ['1374']
+	1374: {'export': True, 'labels:label': 'Object', 'type': 'function', 'name': 'processInputsAndCheckHash', 'parent_scope': '1357'}
+167 handle result: obj_nodes=['1374'], name=processInputsAndCheckHash, name_nodes=['1381']
+Var module handle result -> ['1348']
+	1348: {'export': True, 'labels:label': 'Object', 'type': 'object'}
+164 handle result: obj_nodes=['1348'], name=module, name_nodes=['1347']
+163 handle result: obj_nodes=['1352'], name=module.exports, name_nodes=['1351']
+./example_1.js exported
+	{'export': True, 'labels:label': 'Name', 'name': 'name', 'type': 'NAMENODE'}
+	{'export': True, 'labels:label': 'Name', 'name': '__proto__', 'type': 'NAMENODE'}
+	{'export': True, 'labels:label': 'Name', 'name': 'constructor', 'type': 'NAMENODE'}
+	{'export': True, 'labels:label': 'Name', 'name': 'prototype', 'type': 'NAMENODE'}
+	{'export': True, 'labels:label': 'Name', 'name': 'length', 'type': 'NAMENODE'}
+All args:
+print: False
+vul_type: os_command
+prototype_pollution: False
+module: True
+exit: False
+single_branch: False
+run_all: True
+function_timeout: None
+timeout: None
+package_timeout: None
+call_limit: 3
+entry_func: None
+list: None
+install: False
+max_rep: 4
+run_all_files: False
+no_prioritized_funcs: False
+entrance_func: None
+pre_timeout: 30
+exported_func_timeout: None
+no_exports: False
+max_file_stack: None
+skip_func: None
+allow_func: None
+add_sinks: None
+print_all_pathes: False
+run_env: ./tmp_env/
+no_file_based: False
+parallel: None
+auto_type: False
+export: None
+nodejs: False
+gc: False
+gen: False
+more_output: False
+run_test: False
+dataflow: False
+babel: None
+input_file: ./example_1.js
+Analyzing stdin
+Current node: 1 Program (line: 1, parent: 0, funcid: null)
+Make 2 CFG_FUNC_ENTRY Artificial node
+Make 3 CFG_FUNC_EXIT Artificial node
+Current node: 5 VariableDeclaration (line: 1, parent: 4, funcid: 1)
+Current node: 5 VariableDeclarator (line: 1, parent: 4, funcid: 1)
+Current node: 6 Identifier (line: 1, parent: 5, funcid: 1)
+Current node: 8 CallExpression (line: 1, parent: 5, funcid: 1)
+Current node: 10 Identifier (line: 1, parent: 8, funcid: 1)
+Current node: 12 Literal (line: 1, parent: 11, funcid: 1)
+Searching ./example_1.js in /pppj/src/mutate/staticPlusSymbolic,/pppj/src/mutate/staticPlusSymbolic/node_modules,/pppj/src/mutate/node_modules,/pppj/src/node_modules,/pppj/node_modules,/node_modules,/root/.node_modules,/root/.node_libraries,/root/packagecrawler
+Package ./example_1.js found at /pppj/src/mutate/staticPlusSymbolic/example_1.js
+Analyzing /pppj/src/mutate/staticPlusSymbolic/example_1.js
+Current node: 14 Program (line: 1, parent: 13, funcid: null)
+Make 15 CFG_FUNC_ENTRY Artificial node
+Make 16 CFG_FUNC_EXIT Artificial node
+Current node: 18 VariableDeclaration (line: 1, parent: 17, funcid: 14)
+Current node: 18 VariableDeclarator (line: 1, parent: 17, funcid: 14)
+Current node: 19 Identifier (line: 1, parent: 18, funcid: 14)
+Current node: 21 CallExpression (line: 1, parent: 18, funcid: 14)
+Current node: 23 Identifier (line: 1, parent: 21, funcid: 14)
+Current node: 25 Literal (line: 1, parent: 24, funcid: 14)
+Current node: 26 FunctionDeclaration (line: 3, parent: 17, funcid: 14)
+Make 27 CFG_FUNC_ENTRY Artificial node
+Make 28 CFG_FUNC_EXIT Artificial node
+Current node: 29 Identifier (line: 3, parent: 26, funcid: 26)
+Current node: 34 Identifier (line: 3, parent: 32, funcid: 26)
+Current node: 38 Identifier (line: 3, parent: 36, funcid: 26)
+Current node: 40 BlockStatement (line: 3, parent: 26, funcid: 26)
+Current node: 41 VariableDeclaration (line: 4, parent: 40, funcid: 26)
+Current node: 41 VariableDeclarator (line: 4, parent: 40, funcid: 26)
+Current node: 42 Identifier (line: 4, parent: 41, funcid: 26)
+Current node: 44 Literal (line: 4, parent: 41, funcid: 26)
+Current node: 45 IfStatement (line: 5, parent: 40, funcid: 26)
+Current node: 47 BinaryExpression (line: 5, parent: 46, funcid: 26)
+Current node: 48 Identifier (line: 5, parent: 47, funcid: 26)
+Current node: 50 Literal (line: 5, parent: 47, funcid: 26)
+Current node: 51 BlockStatement (line: 5, parent: 46, funcid: 26)
+Current node: 52 ExpressionStatement (line: 6, parent: 51, funcid: 26)
+Current node: 52 AssignmentExpression (line: 6, parent: 51, funcid: 26)
+Current node: 53 Identifier (line: 6, parent: 52, funcid: 26)
+Current node: 55 BinaryExpression (line: 6, parent: 52, funcid: 26)
+Current node: 56 Identifier (line: 6, parent: 55, funcid: 26)
+Current node: 58 Identifier (line: 6, parent: 55, funcid: 26)
+Current node: 62 BlockStatement (line: 8, parent: 60, funcid: 26)
+Current node: 63 IfStatement (line: 9, parent: 62, funcid: 26)
+Current node: 65 BinaryExpression (line: 9, parent: 64, funcid: 26)
+Current node: 66 Identifier (line: 9, parent: 65, funcid: 26)
+Current node: 68 Identifier (line: 9, parent: 65, funcid: 26)
+Current node: 70 BlockStatement (line: 9, parent: 64, funcid: 26)
+Current node: 71 ExpressionStatement (line: 10, parent: 70, funcid: 26)
+Current node: 71 AssignmentExpression (line: 10, parent: 70, funcid: 26)
+Current node: 72 Identifier (line: 10, parent: 71, funcid: 26)
+Current node: 74 BinaryExpression (line: 10, parent: 71, funcid: 26)
+Current node: 75 Identifier (line: 10, parent: 74, funcid: 26)
+Current node: 77 Literal (line: 10, parent: 74, funcid: 26)
+Current node: 80 BlockStatement (line: 12, parent: 78, funcid: 26)
+Current node: 81 ExpressionStatement (line: 13, parent: 80, funcid: 26)
+Current node: 81 AssignmentExpression (line: 13, parent: 80, funcid: 26)
+Current node: 82 Identifier (line: 13, parent: 81, funcid: 26)
+Current node: 84 BinaryExpression (line: 13, parent: 81, funcid: 26)
+Current node: 85 Literal (line: 13, parent: 84, funcid: 26)
+Current node: 86 Identifier (line: 13, parent: 84, funcid: 26)
+Current node: 88 ExpressionStatement (line: 16, parent: 40, funcid: 26)
+Current node: 88 AssignmentExpression (line: 16, parent: 40, funcid: 26)
+Current node: 89 Identifier (line: 16, parent: 88, funcid: 26)
+Current node: 91 BinaryExpression (line: 16, parent: 88, funcid: 26)
+Current node: 92 Identifier (line: 16, parent: 91, funcid: 26)
+Current node: 94 Identifier (line: 16, parent: 91, funcid: 26)
+Current node: 96 ReturnStatement (line: 17, parent: 40, funcid: 26)
+Current node: 97 Identifier (line: 17, parent: 96, funcid: 26)
+Current node: 101 FunctionDeclaration (line: 20, parent: 17, funcid: 14)
+Make 102 CFG_FUNC_ENTRY Artificial node
+Make 103 CFG_FUNC_EXIT Artificial node
+Current node: 104 Identifier (line: 20, parent: 101, funcid: 101)
+Current node: 109 Identifier (line: 20, parent: 107, funcid: 101)
+Current node: 113 Identifier (line: 20, parent: 111, funcid: 101)
+Current node: 115 BlockStatement (line: 20, parent: 101, funcid: 101)
+Current node: 116 VariableDeclaration (line: 21, parent: 115, funcid: 101)
+Current node: 116 VariableDeclarator (line: 21, parent: 115, funcid: 101)
+Current node: 117 Identifier (line: 21, parent: 116, funcid: 101)
+Current node: 119 CallExpression (line: 21, parent: 116, funcid: 101)
+Current node: 121 Identifier (line: 21, parent: 119, funcid: 101)
+Current node: 123 Identifier (line: 21, parent: 122, funcid: 101)
+Current node: 125 Identifier (line: 21, parent: 122, funcid: 101)
+Current node: 127 VariableDeclaration (line: 22, parent: 115, funcid: 101)
+Current node: 127 VariableDeclarator (line: 22, parent: 115, funcid: 101)
+Current node: 128 Identifier (line: 22, parent: 127, funcid: 101)
+Current node: 130 Literal (line: 22, parent: 127, funcid: 101)
+Current node: 131 ExpressionStatement (line: 23, parent: 115, funcid: 101)
+Current node: 131 CallExpression (line: 23, parent: 115, funcid: 101)
+Current node: 133 Identifier (line: 23, parent: 131, funcid: 101)
+Current node: 135 Identifier (line: 23, parent: 134, funcid: 101)
+Current node: 137 IfStatement (line: 24, parent: 115, funcid: 101)
+Current node: 139 BinaryExpression (line: 24, parent: 138, funcid: 101)
+Current node: 140 CallExpression (line: 24, parent: 139, funcid: 101)
+Current node: 141 CallExpression (line: 24, parent: 140, funcid: 101)
+Current node: 142 CallExpression (line: 24, parent: 141, funcid: 101)
+Current node: 143 Identifier (line: 24, parent: 142, funcid: 101)
+Current node: 145 Identifier (line: 24, parent: 142, funcid: 101)
+Current node: 147 Literal (line: 24, parent: 146, funcid: 101)
+Current node: 148 Identifier (line: 24, parent: 141, funcid: 101)
+Current node: 150 CallExpression (line: 24, parent: 149, funcid: 101)
+Current node: 152 Identifier (line: 24, parent: 150, funcid: 101)
+Current node: 154 Identifier (line: 24, parent: 153, funcid: 101)
+Current node: 156 Identifier (line: 24, parent: 140, funcid: 101)
+Current node: 158 Literal (line: 24, parent: 157, funcid: 101)
+Current node: 159 Identifier (line: 24, parent: 139, funcid: 101)
+Current node: 161 BlockStatement (line: 24, parent: 138, funcid: 101)
+Current node: 162 ReturnStatement (line: 25, parent: 161, funcid: 101)
+Current node: 163 Literal (line: 25, parent: 162, funcid: 101)
+Current node: 168 BlockStatement (line: 26, parent: 166, funcid: 101)
+Current node: 169 ReturnStatement (line: 27, parent: 168, funcid: 101)
+Current node: 170 Literal (line: 27, parent: 169, funcid: 101)
+Current node: 175 ExpressionStatement (line: 31, parent: 17, funcid: 14)
+Current node: 175 AssignmentExpression (line: 31, parent: 17, funcid: 14)
+Current node: 176 MemberExpression (line: 31, parent: 175, funcid: 14)
+Current node: 177 Identifier (line: 31, parent: 176, funcid: 14)
+Current node: 179 Identifier (line: 31, parent: 176, funcid: 14)
+Current node: 180 Identifier (line: 31, parent: 175, funcid: 14)
+
+GENERATE OBJECT GRAPH: 0
+REGISTER 26 to 14
+REGISTER 101 to 14
+FILE stdin BEGINS
+Declare function stdin as 1342
+FUNCTION 1 stdin STARTS, SCOPE 1359, DECL OBJ 1342, this OBJs ['184'], branches []
+BLOCK 4 STARTS, SCOPE 1370
+Running Line 1 to 1
+Var require handle result -> ['1061']
+	1061: {'export': False, 'labels:label': 'Object', 'type': 'function', 'pythonfunc': <function handle_require at 0x7f8e4e3fa550>}
+9 handle result: obj_nodes=['1061'], name=require, name_nodes=['1068']
+Running Python function 1061 <function handle_require at 0x7f8e4e3fa550>...
+[NodeHandleResult(value_sources=[[]], values=['./example_1.js'])]
+FILE /pppj/src/mutate/staticPlusSymbolic/example_1.js BEGINS
+Declare function /pppj/src/mutate/staticPlusSymbolic/example_1.js as 1372
+FUNCTION 14 /pppj/src/mutate/staticPlusSymbolic/example_1.js STARTS, SCOPE 1389, DECL OBJ 1372, this OBJs ['184'], branches []
+BLOCK 17 STARTS, SCOPE 1400
+Declare function computeComplex as 1401
+Declare function processInputsAndCheckHash as 1417
+Running Line 1 to 1
+Var require handle result -> ['1061']
+	1061: {'export': False, 'labels:label': 'Object', 'type': 'function', 'pythonfunc': <function handle_require at 0x7f8e4e3fa550>}
+22 handle result: obj_nodes=['1061'], name=require, name_nodes=['1068']
+Running Python function 1061 <function handle_require at 0x7f8e4e3fa550>...
+[NodeHandleResult(value_sources=[[]], values=['crypto'])]
+Trying to require package crypto.
+
+CALLS 18 -> 1056 (Line 1 -> Line ?) require
+21 handle result: obj_nodes=[], name=None, name_nodes=[]
+Name node crypto not found, create name node
+Var crypto handle result -> ['1332']
+	1332: {'export': True, 'labels:label': 'Object', 'type': 'undefined', 'code': 'undefined'}
+19 handle result: obj_nodes=['1332'], name=crypto, name_nodes=['1433']
+Right side handling error at statement 18
+Running Line 3 to 18
+Running Line 20 to 29
+Running Line 31 to 31
+Var processInputsAndCheckHash handle result -> ['1417']
+	1417: {'export': True, 'labels:label': 'Object', 'type': 'function', 'name': 'processInputsAndCheckHash', 'parent_scope': '1400'}
+180 handle result: obj_nodes=['1417'], name=processInputsAndCheckHash, name_nodes=['1424']
+Var module handle result -> ['1391']
+	1391: {'export': True, 'labels:label': 'Object', 'type': 'object'}
+177 handle result: obj_nodes=['1391'], name=module, name_nodes=['1390']
+176 handle result: obj_nodes=['1395'], name=module.exports, name_nodes=['1394']
+/pppj/src/mutate/staticPlusSymbolic/example_1.js exported
+	{'export': True, 'labels:label': 'Name', 'name': 'prototype', 'type': 'NAMENODE'}
+	{'export': True, 'labels:label': 'Name', 'name': 'name', 'type': 'NAMENODE'}
+	{'export': True, 'labels:label': 'Name', 'name': 'length', 'type': 'NAMENODE'}
+	{'export': True, 'labels:label': 'Name', 'name': '__proto__', 'type': 'NAMENODE'}
+	{'export': True, 'labels:label': 'Name', 'name': 'constructor', 'type': 'NAMENODE'}
+Trying to require package ./example_1.js.
+Run exported function 1417 module.exports
+1440 marked as tainted [3]
+add arg A <- new obj 1440, scope 1434, ast node 107
+1443 marked as tainted [3]
+add arg B <- new obj 1443, scope 1434, ast node 111
+1445 marked as tainted [4]
+add arguments[2] <- new obj 1445, scope 1434, ast node None
+FUNCTION 101 processInputsAndCheckHash STARTS, SCOPE 1434, DECL OBJ 1417, this OBJs ['1449'], branches []
+BLOCK 115 STARTS, SCOPE 1451
+Running Line 21 to 21
+Var computeComplex handle result -> ['1401']
+	1401: {'export': True, 'labels:label': 'Object', 'type': 'function', 'name': 'computeComplex', 'parent_scope': '1400'}
+120 handle result: obj_nodes=['1401'], name=computeComplex, name_nodes=['1408']
+Var A handle result -> ['1440']
+	1440: {'export': True, 'labels:label': 'Object', 'type': 'object', 'code': *, 'tainted': True, 'fake_arg': True}
+123 handle result: obj_nodes=['1440'], name=A, name_nodes=['1439']
+Var B handle result -> ['1443']
+	1443: {'export': True, 'labels:label': 'Object', 'type': 'object', 'code': *, 'tainted': True, 'fake_arg': True}
+125 handle result: obj_nodes=['1443'], name=B, name_nodes=['1442']
+add arg A <- ['1440'], scope 1452
+add arg B <- ['1443'], scope 1452
+add arguments[2] <- new obj 1461, scope 1452, ast node 119
+FUNCTION 26 computeComplex STARTS, SCOPE 1452, DECL OBJ 1401, this OBJs ['184'], branches []
+BLOCK 40 STARTS, SCOPE 1465
+Running Line 4 to 4
+Name node result not found, create name node
+Var result handle result -> ['1332']
+	1332: {'export': True, 'labels:label': 'Object', 'type': 'undefined', 'code': 'undefined'}
+42 handle result: obj_nodes=['1332'], name=result, name_nodes=['1466']
+Running Line 5 to 15
+Var A handle result -> ['1440']
+	1440: {'export': True, 'labels:label': 'Object', 'type': 'object', 'code': *, 'tainted': True, 'fake_arg': True}
+48 handle result: obj_nodes=['1440'], name=A, name_nodes=['1458']
+OBJ REACHES 101 -> 47 (Line 20 -> Line 5), by OBJ 1436
+OBJ REACHES 26 -> 47 (Line 3 -> Line 5), by OBJ 1454
+OBJ REACHES 101 -> 47 (Line 20 -> Line 5), by OBJ 1440
+Check condition A>3 result: 0.55 True
+BLOCK 51 STARTS, SCOPE 1468
+Running Line 6 to 6
+Var B handle result -> ['1443']
+	1443: {'export': True, 'labels:label': 'Object', 'type': 'object', 'code': *, 'tainted': True, 'fake_arg': True}
+53 handle result: obj_nodes=['1443'], name=B, name_nodes=['1460']
+BLOCK 62 STARTS, SCOPE 1469
+Running Line 9 to 14
+Var B handle result -> ['1443']
+	1443: {'export': True, 'labels:label': 'Object', 'type': 'object', 'code': *, 'tainted': True, 'fake_arg': True}
+66 handle result: obj_nodes=['1443'], name=B, name_nodes=['1460']
+Var A handle result -> ['1440']
+	1440: {'export': True, 'labels:label': 'Object', 'type': 'object', 'code': *, 'tainted': True, 'fake_arg': True}
+68 handle result: obj_nodes=['1440'], name=A, name_nodes=['1458']
+OBJ REACHES 101 -> 65 (Line 20 -> Line 9), by OBJ 1443
+OBJ REACHES 101 -> 65 (Line 20 -> Line 9), by OBJ 1436
+OBJ REACHES 26 -> 65 (Line 3 -> Line 9), by OBJ 1454
+OBJ REACHES 101 -> 65 (Line 20 -> Line 9), by OBJ 1436
+OBJ REACHES 26 -> 65 (Line 3 -> Line 9), by OBJ 1454
+OBJ REACHES 101 -> 65 (Line 20 -> Line 9), by OBJ 1440
+Check condition B>A result: 0.55 True
+BLOCK 70 STARTS, SCOPE 1470
+Running Line 10 to 10
+Var A handle result -> ['1440']
+	1440: {'export': True, 'labels:label': 'Object', 'type': 'object', 'code': *, 'tainted': True, 'fake_arg': True}
+75 handle result: obj_nodes=['1440'], name=A, name_nodes=['1458']
+OBJ REACHES 101 -> 71 (Line 20 -> Line 10), by OBJ 1436
+OBJ REACHES 26 -> 71 (Line 3 -> Line 10), by OBJ 1454
+OBJ REACHES 101 -> 71 (Line 20 -> Line 10), by OBJ 1440
+Var A handle result -> ['1440']
+	1440: {'export': True, 'labels:label': 'Object', 'type': 'object', 'code': *, 'tainted': True, 'fake_arg': True}
+72 handle result: obj_nodes=['1440'], name=A, name_nodes=['1458']
+BLOCK 80 STARTS, SCOPE 1476
+Running Line 13 to 13
+Var A handle result -> ['1440']
+	1440: {'export': True, 'labels:label': 'Object', 'type': 'object', 'code': *, 'tainted': True, 'fake_arg': True}
+82 handle result: obj_nodes=['1440'], name=A, name_nodes=['1458']
+Merging branches in If63-d3768f
+Merging branches in If45-63ec99
+Running Line 16 to 16
+Var A handle result -> ['191', '1471', '1440', '188']
+	191: {'export': True, 'labels:label': 'Object', 'type': 'boolean', 'code': 'false'}
+	1471: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': *, 'tainted': True}
+	1440: {'export': True, 'labels:label': 'Object', 'type': 'object', 'code': *, 'tainted': True, 'fake_arg': True}
+	188: {'export': True, 'labels:label': 'Object', 'type': 'boolean', 'code': 'true'}
+92 handle result: obj_nodes=['191', '1471', '1440', '188'], name=A, name_nodes=['1458']
+Var B handle result -> ['1443', '191', '188']
+	1443: {'export': True, 'labels:label': 'Object', 'type': 'object', 'code': *, 'tainted': True, 'fake_arg': True}
+	191: {'export': True, 'labels:label': 'Object', 'type': 'boolean', 'code': 'false'}
+	188: {'export': True, 'labels:label': 'Object', 'type': 'boolean', 'code': 'true'}
+94 handle result: obj_nodes=['1443', '191', '188'], name=B, name_nodes=['1460']
+OBJ REACHES 71 -> 88 (Line 10 -> Line 16), by OBJ 1471
+OBJ REACHES 101 -> 88 (Line 20 -> Line 16), by OBJ 1436
+OBJ REACHES 101 -> 88 (Line 20 -> Line 16), by OBJ 1440
+OBJ REACHES 101 -> 88 (Line 20 -> Line 16), by OBJ 1443
+OBJ REACHES 26 -> 88 (Line 3 -> Line 16), by OBJ 1454
+Var result handle result -> ['1467']
+	1467: {'export': True, 'labels:label': 'Object', 'type': 'number', 'code': 0.0}
+89 handle result: obj_nodes=['1467'], name=result, name_nodes=['1466']
+Running Line 17 to 17
+Var result handle result -> ['1487', '1492', '1512', '1477', '1482', '1517', '1507', '1502', '1497']
+	1487: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': 'falsetrue'}
+	1492: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': *, 'tainted': True}
+	1512: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': 'truefalse'}
+	1477: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': *, 'tainted': True}
+	1482: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': 'falsefalse'}
+	1517: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': 'truetrue'}
+	1507: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': *, 'tainted': True}
+	1502: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': *, 'tainted': True}
+	1497: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': *, 'tainted': True}
+97 handle result: obj_nodes=['1487', '1492', '1512', '1477', '1482', '1517', '1507', '1502', '1497'], name=result, name_nodes=['1466']
+CALLS 116 -> 26 (Line 21 -> Line 3) computeComplex
+119 handle result: obj_nodes=['1487', '1492', '1512', '1477', '1482', '1517', '1507', '1502', '1497'], name=None, name_nodes=[]
+Name node C not found, create name node
+Var C handle result -> ['1332']
+	1332: {'export': True, 'labels:label': 'Object', 'type': 'undefined', 'code': 'undefined'}
+117 handle result: obj_nodes=['1332'], name=C, name_nodes=['1522']
+Running Line 22 to 22
+Name node expectedHash not found, create name node
+Var expectedHash handle result -> ['1332']
+	1332: {'export': True, 'labels:label': 'Object', 'type': 'undefined', 'code': 'undefined'}
+128 handle result: obj_nodes=['1332'], name=expectedHash, name_nodes=['1523']
+Running Line 23 to 23
+Name node sink_jsfuzz not found, create name node
+Var sink_jsfuzz handle result -> ['1332']
+	1332: {'export': True, 'labels:label': 'Object', 'type': 'undefined', 'code': 'undefined'}
+132 handle result: obj_nodes=['1332'], name=sink_jsfuzz, name_nodes=['1529']
+Var C handle result -> ['1487', '1492', '1512', '1477', '1482', '1517', '1507', '1502', '1497']
+	1487: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': 'falsetrue'}
+	1492: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': *, 'tainted': True}
+	1512: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': 'truefalse'}
+	1477: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': *, 'tainted': True}
+	1482: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': 'falsefalse'}
+	1517: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': 'truetrue'}
+	1507: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': *, 'tainted': True}
+	1502: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': *, 'tainted': True}
+	1497: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': *, 'tainted': True}
+135 handle result: obj_nodes=['1487', '1492', '1512', '1477', '1482', '1517', '1507', '1502', '1497'], name=C, name_nodes=['1522']
+add arg arguments[0] <- ['1487', '1492', '1512', '1477', '1482', '1517', '1507', '1502', '1497'], scope 1542
+add arguments[1] <- new obj 1548, scope 1542, ast node 131
+add arguments[2] <- new obj 1550, scope 1542, ast node 131
+FUNCTION 1530 {anonymous} STARTS, SCOPE 1542, DECL OBJ 1535, this OBJs ['184'], branches []
+CALLS 131 -> 1530 (Line 23 -> Line ?) sink_jsfuzz
+131 handle result: obj_nodes=['1554'], name=None, name_nodes=[], used_objs=['1487', '1492', '1512', '1477', '1482', '1517', '1507', '1502', '1497']
+OBJ REACHES 88 -> 131 (Line 16 -> Line 23), by OBJ 1487
+OBJ REACHES 88 -> 131 (Line 16 -> Line 23), by OBJ 1492
+OBJ REACHES 88 -> 131 (Line 16 -> Line 23), by OBJ 1512
+OBJ REACHES 88 -> 131 (Line 16 -> Line 23), by OBJ 1477
+OBJ REACHES 88 -> 131 (Line 16 -> Line 23), by OBJ 1482
+OBJ REACHES 88 -> 131 (Line 16 -> Line 23), by OBJ 1517
+OBJ REACHES 88 -> 131 (Line 16 -> Line 23), by OBJ 1507
+OBJ REACHES 88 -> 131 (Line 16 -> Line 23), by OBJ 1502
+OBJ REACHES 88 -> 131 (Line 16 -> Line 23), by OBJ 1497
+Running Line 24 to 28
+Var crypto handle result -> ['1332']
+	1332: {'export': True, 'labels:label': 'Object', 'type': 'undefined', 'code': 'undefined'}
+143 handle result: obj_nodes=['1332'], name=crypto, name_nodes=['1433']
+PARENT OBJ crypto NOT DEFINED, creating object nodes
+Cannot find "direct" property, going into __proto__ ['201']...
+  crypto.__proto__.createHash
+Cannot find "direct" property, going into __proto__ ['186']...
+  crypto.__proto__.__proto__.createHash
+1557 is a wildcard object, creating a wildcard object 1561 for its properties
+142 handle result: obj_nodes=['1561'], name=crypto.createHash, name_nodes=['1560']
+add arg arguments[0] <- ['1577'], scope 1572
+add arguments[1] <- new obj 1583, scope 1572, ast node 142
+add arguments[2] <- new obj 1585, scope 1572, ast node 142
+FUNCTION 1562 ? STARTS, SCOPE 1572, DECL OBJ ?, this OBJs ['1332'], branches []
+CALLS 137 -> 1562 (Line 24 -> Line ?) crypto.createHash
+142 handle result: obj_nodes=['1589'], name=None, name_nodes=[], used_objs=['1332']
+Cannot find "direct" property, going into __proto__ ['201']...
+  crypto.createHash('sha256').__proto__.update
+Cannot find "direct" property, going into __proto__ ['186']...
+  crypto.createHash('sha256').__proto__.__proto__.update
+1589 is a wildcard object, creating a wildcard object 1593 for its properties
+141 handle result: obj_nodes=['1593'], name=crypto.createHash('sha256').update, name_nodes=['1592']
+Var String handle result -> ['406']
+	406: {'export': False, 'labels:label': 'Object', 'type': 'function', 'pythonfunc': <function this_returning_func at 0x7f8e4e3b6280>}
+151 handle result: obj_nodes=['406'], name=String, name_nodes=['413']
+Var C handle result -> ['1487', '1492', '1512', '1477', '1482', '1517', '1507', '1502', '1497']
+	1487: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': 'falsetrue'}
+	1492: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': *, 'tainted': True}
+	1512: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': 'truefalse'}
+	1477: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': *, 'tainted': True}
+	1482: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': 'falsefalse'}
+	1517: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': 'truetrue'}
+	1507: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': *, 'tainted': True}
+	1502: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': *, 'tainted': True}
+	1497: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': *, 'tainted': True}
+154 handle result: obj_nodes=['1487', '1492', '1512', '1477', '1482', '1517', '1507', '1502', '1497'], name=C, name_nodes=['1522']
+Running Python function 406 <function this_returning_func at 0x7f8e4e3b6280>...
+[NodeHandleResult(ast_node='154', name='C', name_nodes=['1522'], obj_nodes=['1487', '1492', '1512', '1477', '1482', '1517', '1507', '1502', '1497'])]
+CALLS 137 -> 401 (Line 24 -> Line ?) String
+150 handle result: obj_nodes=['1487', '1492', '1512', '1477', '1482', '1517', '1507', '1502', '1497'], name=None, name_nodes=[]
+add arg arguments[0] <- ['1487', '1492', '1512', '1477', '1482', '1517', '1507', '1502', '1497'], scope 1604
+add arguments[1] <- new obj 1610, scope 1604, ast node 141
+add arguments[2] <- new obj 1612, scope 1604, ast node 141
+FUNCTION 1594 ? STARTS, SCOPE 1604, DECL OBJ ?, this OBJs ['1589'], branches []
+CALLS 137 -> 1594 (Line 24 -> Line ?) crypto.createHash('sha256').update
+141 handle result: obj_nodes=['1616'], name=None, name_nodes=[], used_objs=['1487', '1492', '1512', '1477', '1482', '1517', '1507', '1589', '1502', '1497']
+OBJ REACHES 88 -> 137 (Line 16 -> Line 24), by OBJ 1487
+OBJ REACHES 88 -> 137 (Line 16 -> Line 24), by OBJ 1492
+OBJ REACHES 88 -> 137 (Line 16 -> Line 24), by OBJ 1512
+OBJ REACHES 88 -> 137 (Line 16 -> Line 24), by OBJ 1477
+OBJ REACHES 88 -> 137 (Line 16 -> Line 24), by OBJ 1482
+OBJ REACHES 88 -> 137 (Line 16 -> Line 24), by OBJ 1517
+OBJ REACHES 88 -> 137 (Line 16 -> Line 24), by OBJ 1507
+OBJ REACHES 88 -> 137 (Line 16 -> Line 24), by OBJ 1502
+OBJ REACHES 88 -> 137 (Line 16 -> Line 24), by OBJ 1497
+Cannot find "direct" property, going into __proto__ ['201']...
+  crypto.createHash('sha256').update(String(C)).__proto__.digest
+Cannot find "direct" property, going into __proto__ ['186']...
+  crypto.createHash('sha256').update(String(C)).__proto__.__proto__.digest
+1616 is a wildcard object, creating a wildcard object 1620 for its properties
+1620 marked as tainted 1
+140 handle result: obj_nodes=['1620'], name=crypto.createHash('sha256').update(String(C)).digest, name_nodes=['1619']
+add arg arguments[0] <- ['1636'], scope 1631
+add arguments[1] <- new obj 1642, scope 1631, ast node 140
+add arguments[2] <- new obj 1644, scope 1631, ast node 140
+FUNCTION 1621 ? STARTS, SCOPE 1631, DECL OBJ ?, this OBJs ['1616'], branches []
+CALLS 137 -> 1621 (Line 24 -> Line ?) crypto.createHash('sha256').update(String(C)).digest
+140 handle result: obj_nodes=['1648'], name=None, name_nodes=[], used_objs=['1616']
+Var expectedHash handle result -> ['1524']
+	1524: {'export': True, 'labels:label': 'Object', 'type': 'string', 'code': 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'}
+159 handle result: obj_nodes=['1524'], name=expectedHash, name_nodes=['1523']
+OBJ REACHES 137 -> 139 (Line 24 -> Line 24), by OBJ 1648
+OBJ REACHES 127 -> 139 (Line 22 -> Line 24), by OBJ 1524
+Check condition crypto.createHash('sha256').update(String(C)).digest('hex') === expectedHash result: 0.5 False
+BLOCK 161 STARTS, SCOPE 1651
+Running Line 25 to 25
+Var true handle result -> ['188']
+	188: {'export': True, 'labels:label': 'Object', 'type': 'boolean', 'code': 'true'}
+163 handle result: obj_nodes=['188'], name=true, name_nodes=['189']
+BLOCK 168 STARTS, SCOPE 1652
+Running Line 27 to 27
+Var false handle result -> ['191']
+	191: {'export': True, 'labels:label': 'Object', 'type': 'boolean', 'code': 'false'}
+170 handle result: obj_nodes=['191'], name=false, name_nodes=['192']
+Merging branches in If137-64c8af
+CALLS 5 -> 1056 (Line 1 -> Line ?) require
+8 handle result: obj_nodes=['1417'], name=None, name_nodes=[]
+Var main_func handle result -> ['1332']
+	1332: {'export': True, 'labels:label': 'Object', 'type': 'undefined', 'code': 'undefined'}
+6 handle result: obj_nodes=['1332'], name=main_func, name_nodes=['1371']
+stdin exported
+	{'export': True, 'labels:label': 'Name', 'name': '__proto__', 'type': 'NAMENODE'}
+	{'export': True, 'labels:label': 'Name', 'name': 'constructor', 'type': 'NAMENODE'}
+All args:
+print: False
+vul_type: os_command
+prototype_pollution: False
+module: False
+exit: False
+single_branch: False
+run_all: False
+function_timeout: None
+timeout: None
+package_timeout: None
+call_limit: 3
+entry_func: None
+list: None
+install: False
+max_rep: 4
+run_all_files: False
+no_prioritized_funcs: False
+entrance_func: None
+pre_timeout: 30
+exported_func_timeout: None
+no_exports: False
+max_file_stack: None
+skip_func: None
+allow_func: None
+add_sinks: None
+print_all_pathes: False
+run_env: ./tmp_env/
+no_file_based: False
+parallel: None
+auto_type: False
+export: None
+nodejs: False
+gc: False
+gen: False
+more_output: False
+run_test: False
+dataflow: True
+babel: None
+input_file: ./example_1.js
+All args:
+print: False
+vul_type: os_command
+prototype_pollution: False
+module: False
+exit: False
+single_branch: False
+run_all: False
+function_timeout: None
+timeout: None
+package_timeout: None
+call_limit: 3
+entry_func: None
+list: None
+install: False
+max_rep: 4
+run_all_files: False
+no_prioritized_funcs: False
+entrance_func: None
+pre_timeout: 30
+exported_func_timeout: None
+no_exports: False
+max_file_stack: None
+skip_func: None
+allow_func: None
+add_sinks: None
+print_all_pathes: False
+run_env: ./tmp_env/
+no_file_based: False
+parallel: None
+auto_type: False
+export: None
+nodejs: False
+gc: False
+gen: False
+more_output: False
+run_test: False
+dataflow: True
+babel: None
+input_file: ./example_1.js

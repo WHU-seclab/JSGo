@@ -1,0 +1,308 @@
+Finished Importing
+Add name node global in scope 169
+Add name node null in scope 169
+Add name node true in scope 169
+Add name node false in scope 169
+Add blank function name: Object
+Add name node Object in scope 169
+Add blank function name: Function
+Add name node Function in scope 169
+Add blank function name: keys
+Add blank function name: values
+Add blank function name: entries
+Add blank function name: defineProperty
+Add blank function name: defineProperties
+Add blank function name: assign
+Add blank function name: create
+Add blank function name: toString
+Add blank function name: toLocaleString
+Add blank function name: valueOf
+Add blank function name: hasOwnProperty
+Add blank function name: call
+Add blank function name: apply
+Add blank function name: bind
+Add blank function name: String
+Add name node String in scope 169
+Add blank function name: match
+Add blank function name: matchAll
+Add blank function name: replace
+Add blank function name: search
+Add blank function name: split
+Add blank function name: substr
+Add blank function name: substring
+Add blank function name: reverse
+Add blank function name: toLowerCase
+Add blank function name: toUpperCase
+Add blank function name: trim
+Add blank function name: trimEnd
+Add blank function name: trimStart
+Add blank function name: charAt
+Add blank function name: slice
+Add blank function name: Number
+Add name node Number in scope 169
+Add blank function name: Array
+Add name node Array in scope 169
+Add blank function name: isArray
+Add blank function name: push
+Add blank function name: pop
+Add blank function name: unshift
+Add blank function name: shift
+Add blank function name: join
+Add blank function name: forEach
+Add blank function name: keys
+Add blank function name: values
+Add blank function name: entries
+Add blank function name: splice
+Add blank function name: slice
+Add blank function name: filter
+Add blank function name: map
+Add blank function name: reduce
+Add blank function name: concat
+Add blank function name: Boolean
+Add name node Boolean in scope 169
+Add blank function name: Symbol
+Add name node Symbol in scope 169
+Add blank function name: Error
+Add name node Error in scope 169
+Add blank function name: parseInt
+Add name node parseInt in scope 169
+Add blank function name: parseFloat
+Add name node parseFloat in scope 169
+Add blank function name: decodeURI
+Add name node decodeURI in scope 169
+Add blank function name: decodeURIComponent
+Add name node decodeURIComponent in scope 169
+Add blank function name: encodeURI
+Add name node encodeURI in scope 169
+Add blank function name: encodeURIComponent
+Add name node encodeURIComponent in scope 169
+Add blank function name: escape
+Add name node escape in scope 169
+Add blank function name: unescape
+Add name node unescape in scope 169
+Add blank function name: setTimeout
+Add name node setTimeout in scope 169
+Add blank function name: clearTimeout
+Add name node clearTimeout in scope 169
+Add blank function name: setInterval
+Add name node setInterval in scope 169
+Add blank function name: clearInterval
+Add name node clearInterval in scope 169
+Add blank function name: require
+Add name node require in scope 169
+Add name node console in scope 169
+Add blank function name: log
+Add blank function name: error
+Add name node process in scope 169
+Add name node JSON in scope 169
+Add blank function name: parse
+Add blank function name: stringify
+Add blank function name: RegExp
+Add name node RegExp in scope 169
+Add blank function name: exec
+Add blank function name: test
+Add name node Math in scope 169
+Add blank function name: max
+Add blank function name: min
+Add blank function name: sqrt
+Add blank function name: Promise
+Add name node Promise in scope 169
+Add blank function name: then
+Add blank function name: catch
+Add blank function name: finally
+Add blank function name: resolve
+Add blank function name: Date
+Add name node Date in scope 169
+Add name node __opgWildcard in scope 169
+Add name node undefined in scope 169
+Add name node Infinity in scope 169
+Add name node NaN in scope 169
+Internal objects
+'undefined': '1319', 'null': '173', 'global': '171', 'infinity': '1322', '-infinity': '1325', 'NaN': '1326', 'true': '175', 'false': '178'
+Add name node ./example_1.js in scope 169
+Add name node module in scope 1346
+Add name node exports in scope 1346
+Add name node this in scope 1346
+Add name node computeComplex in scope 1346
+Add name node processInputsAndCheckHash in scope 1346
+Assigning ['1374'] to 1351, pre_objs=['1352'], branches=[]
+  Remove 1352
+Finished Exporting to ./exports/nodes.csv and ./exports/rels.csv
+Finished Importing
+Add name node global in scope 182
+Add name node null in scope 182
+Add name node true in scope 182
+Add name node false in scope 182
+Add blank function name: Object
+Add name node Object in scope 182
+Add blank function name: Function
+Add name node Function in scope 182
+Add blank function name: keys
+Add blank function name: values
+Add blank function name: entries
+Add blank function name: defineProperty
+Add blank function name: defineProperties
+Add blank function name: assign
+Add blank function name: create
+Add blank function name: toString
+Add blank function name: toLocaleString
+Add blank function name: valueOf
+Add blank function name: hasOwnProperty
+Add blank function name: call
+Add blank function name: apply
+Add blank function name: bind
+Add blank function name: String
+Add name node String in scope 182
+Add blank function name: match
+Add blank function name: matchAll
+Add blank function name: replace
+Add blank function name: search
+Add blank function name: split
+Add blank function name: substr
+Add blank function name: substring
+Add blank function name: reverse
+Add blank function name: toLowerCase
+Add blank function name: toUpperCase
+Add blank function name: trim
+Add blank function name: trimEnd
+Add blank function name: trimStart
+Add blank function name: charAt
+Add blank function name: slice
+Add blank function name: Number
+Add name node Number in scope 182
+Add blank function name: Array
+Add name node Array in scope 182
+Add blank function name: isArray
+Add blank function name: push
+Add blank function name: pop
+Add blank function name: unshift
+Add blank function name: shift
+Add blank function name: join
+Add blank function name: forEach
+Add blank function name: keys
+Add blank function name: values
+Add blank function name: entries
+Add blank function name: splice
+Add blank function name: slice
+Add blank function name: filter
+Add blank function name: map
+Add blank function name: reduce
+Add blank function name: concat
+Add blank function name: Boolean
+Add name node Boolean in scope 182
+Add blank function name: Symbol
+Add name node Symbol in scope 182
+Add blank function name: Error
+Add name node Error in scope 182
+Add blank function name: parseInt
+Add name node parseInt in scope 182
+Add blank function name: parseFloat
+Add name node parseFloat in scope 182
+Add blank function name: decodeURI
+Add name node decodeURI in scope 182
+Add blank function name: decodeURIComponent
+Add name node decodeURIComponent in scope 182
+Add blank function name: encodeURI
+Add name node encodeURI in scope 182
+Add blank function name: encodeURIComponent
+Add name node encodeURIComponent in scope 182
+Add blank function name: escape
+Add name node escape in scope 182
+Add blank function name: unescape
+Add name node unescape in scope 182
+Add blank function name: setTimeout
+Add name node setTimeout in scope 182
+Add blank function name: clearTimeout
+Add name node clearTimeout in scope 182
+Add blank function name: setInterval
+Add name node setInterval in scope 182
+Add blank function name: clearInterval
+Add name node clearInterval in scope 182
+Add blank function name: require
+Add name node require in scope 182
+Add name node console in scope 182
+Add blank function name: log
+Add blank function name: error
+Add name node process in scope 182
+Add name node JSON in scope 182
+Add blank function name: parse
+Add blank function name: stringify
+Add blank function name: RegExp
+Add name node RegExp in scope 182
+Add blank function name: exec
+Add blank function name: test
+Add name node Math in scope 182
+Add blank function name: max
+Add blank function name: min
+Add blank function name: sqrt
+Add blank function name: Promise
+Add name node Promise in scope 182
+Add blank function name: then
+Add blank function name: catch
+Add blank function name: finally
+Add blank function name: resolve
+Add blank function name: Date
+Add name node Date in scope 182
+Add name node __opgWildcard in scope 182
+Add name node undefined in scope 182
+Add name node Infinity in scope 182
+Add name node NaN in scope 182
+Internal objects
+'undefined': '1332', 'null': '186', 'global': '184', 'infinity': '1335', '-infinity': '1338', 'NaN': '1339', 'true': '188', 'false': '191'
+Add name node stdin in scope 182
+Add name node module in scope 1359
+Add name node exports in scope 1359
+Add name node this in scope 1359
+Add name node main_func in scope 1359
+Add name node /pppj/src/mutate/staticPlusSymbolic/example_1.js in scope 182
+Add name node module in scope 1389
+Add name node exports in scope 1389
+Add name node this in scope 1389
+Add name node computeComplex in scope 1389
+Add name node processInputsAndCheckHash in scope 1389
+Assigning ['1417'] to 1394, pre_objs=['1395'], branches=[]
+  Remove 1395
+Add name node arguments in scope 1434
+Add name node A in scope 1434
+Add name node B in scope 1434
+prototype obj node is ['1419']
+Add name node arguments in scope 1452
+Add name node A in scope 1452
+Add name node B in scope 1452
+Assigning ['1467'] to 1466, pre_objs=[], branches=[]
+Assigning ['188', '191'] to 1460, pre_objs=['1443'], branches=[BranchTag("If45-63ec99#0")]
+Assigning ['1471'] to 1458, pre_objs=['1440'], branches=[BranchTag("If45-63ec99#1"), BranchTag("If63-d3768f#0")]
+Assigning ['188', '191'] to 1458, pre_objs=['1440'], branches=[BranchTag("If45-63ec99#1"), BranchTag("If63-d3768f#1")]
+Assigning ['1477', '1482', '1487', '1492', '1497', '1502', '1507', '1512', '1517'] to 1466, pre_objs=['1467'], branches=[]
+  Remove 1467
+Assigning ['1487', '1492', '1512', '1477', '1482', '1517', '1507', '1502', '1497'] to 1522, pre_objs=[], branches=[]
+Assigning ['1524'] to 1523, pre_objs=[], branches=[]
+Add blank function name: sink_jsfuzz
+Add name node arguments in scope 1542
+Add blank function name: crypto.createHash
+Add name node arguments in scope 1572
+Add blank function name: crypto.createHash('sha256').update
+Add name node arguments in scope 1604
+Add blank function name: crypto.createHash('sha256').update(String(C)).digest
+Add name node arguments in scope 1631
+Assigning ['1417'] to 1371, pre_objs=['1332'], branches=[]
+  Remove 1332
+Finished Exporting to ./exports/nodes.csv and ./exports/rels.csv
+Finished Importing
+3->10->16->23->23
+20->10->16->23->23
+3->16->23->23
+20->16->23->23
+3->10->16->23->3
+20->10->16->23->20
+3->16->23->3
+20->16->23->20
+Finished Importing
+20->10->16->23->23
+3->10->16->23->23
+3->16->23->23
+20->16->23->23
+20->10->16->23->20
+3->10->16->23->3
+3->16->23->3
+20->16->23->20

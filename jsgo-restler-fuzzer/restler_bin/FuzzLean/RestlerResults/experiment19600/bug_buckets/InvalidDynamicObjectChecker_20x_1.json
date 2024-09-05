@@ -1,0 +1,22 @@
+{
+    "status_code": "200",
+    "checker_name": "InvalidDynamicObjectChecker",
+    "reproducible": false,
+    "verb": "DELETE",
+    "endpoint": "/parse/classes/GameScore/{id}",
+    "status_text": "OK",
+    "request_sequence": [
+        {
+            "producer_timing_delay": 0,
+            "max_async_wait_time": 20,
+            "replay_request": "POST /parse/classes/GameScore HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nX-Parse-Application-Id: APPLICATION_ID\r\nX-Parse-REST-API-Key: MASTER_KEY\r\nContent-Type: application/json\r\n\r\n{\n    \"score\":1.23,\n    \"playerName\":\"fuzzstring\",\n    \"cheatMode\":true}\r\n",
+            "response": "HTTP/1.1 201 Created\r\nX-Powered-By: Express\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS\r\nAccess-Control-Allow-Headers: X-Parse-Master-Key, X-Parse-REST-API-Key, X-Parse-Javascript-Key, X-Parse-Application-Id, X-Parse-Client-Version, X-Parse-Session-Token, X-Requested-With, X-Parse-Revocable-Session, X-Parse-Request-Id, Content-Type, Pragma, Cache-Control\r\nAccess-Control-Expose-Headers: X-Parse-Job-Status-Id, X-Parse-Push-Status-Id\r\nLocation: http://localhost:1337/parse/classes/GameScore/lTP3L9TgRT\r\nContent-Type: application/json; charset=utf-8\r\nContent-Length: 64\r\nETag: W/\"40-hQLgAC+qmnuwZRQVO62YJwbtrvE\"\r\nDate: Sat, 09 Dec 2023 14:14:43 GMT\r\nConnection: keep-alive\r\nKeep-Alive: timeout=5\r\n\r\n{\"objectId\":\"lTP3L9TgRT\",\"createdAt\":\"2023-12-09T14:14:43.191Z\"}"
+        },
+        {
+            "producer_timing_delay": 0,
+            "max_async_wait_time": 0,
+            "replay_request": "DELETE /parse/classes/GameScore/lTP3L9TgRT?injected_query_string=123 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nX-Parse-Application-Id: APPLICATION_ID\r\nX-Parse-REST-API-Key: MASTER_KEY\r\n\r\n",
+            "response": "HTTP/1.1 200 OK\r\nX-Powered-By: Express\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS\r\nAccess-Control-Allow-Headers: X-Parse-Master-Key, X-Parse-REST-API-Key, X-Parse-Javascript-Key, X-Parse-Application-Id, X-Parse-Client-Version, X-Parse-Session-Token, X-Requested-With, X-Parse-Revocable-Session, X-Parse-Request-Id, Content-Type, Pragma, Cache-Control\r\nAccess-Control-Expose-Headers: X-Parse-Job-Status-Id, X-Parse-Push-Status-Id\r\nContent-Type: application/json; charset=utf-8\r\nContent-Length: 2\r\nETag: W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\"\r\nDate: Sat, 09 Dec 2023 14:14:43 GMT\r\nConnection: keep-alive\r\nKeep-Alive: timeout=5\r\n\r\n{}"
+        }
+    ]
+}

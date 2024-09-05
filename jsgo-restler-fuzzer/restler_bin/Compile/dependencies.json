@@ -1,0 +1,314 @@
+{
+  "/parse/batch": {
+    "POST": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "requests/[0]"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "requests/[0]/body"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "requests/[0]/method"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "requests/[0]/path"
+        }
+      ]
+    }
+  },
+  "/parse/classes/GameScore": {
+    "POST": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "cheatMode"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "playerName"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "score"
+        }
+      ]
+    }
+  },
+  "/parse/classes/GameScore/{id}": {
+    "DELETE": {
+      "Path": [
+        {
+          "producer_endpoint": "/parse/classes/GameScore",
+          "producer_method": "POST",
+          "producer_resource_name": "objectId",
+          "consumer_param": "id"
+        }
+      ]
+    },
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/parse/classes/GameScore",
+          "producer_method": "POST",
+          "producer_resource_name": "objectId",
+          "consumer_param": "id"
+        }
+      ]
+    },
+    "PUT": {
+      "Path": [
+        {
+          "producer_endpoint": "/parse/classes/GameScore",
+          "producer_method": "POST",
+          "producer_resource_name": "objectId",
+          "consumer_param": "id"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "cheatMode"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "playerName"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "score"
+        }
+      ]
+    }
+  },
+  "/parse/classes/_Role": {
+    "POST": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "name"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "roles"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "users"
+        }
+      ]
+    }
+  },
+  "/parse/classes/_Role/{id}": {
+    "DELETE": {
+      "Path": [
+        {
+          "producer_endpoint": "/parse/classes/_Role",
+          "producer_method": "POST",
+          "producer_resource_name": "objectId",
+          "consumer_param": "id"
+        }
+      ]
+    },
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/parse/classes/_Role",
+          "producer_method": "POST",
+          "producer_resource_name": "objectId",
+          "consumer_param": "id"
+        }
+      ]
+    },
+    "PUT": {
+      "Path": [
+        {
+          "producer_endpoint": "/parse/classes/_Role",
+          "producer_method": "POST",
+          "producer_resource_name": "objectId",
+          "consumer_param": "id"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "createdAt"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "name"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "objectId"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "roles"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "updatedAt"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "users"
+        }
+      ]
+    }
+  },
+  "/parse/classes/_User": {
+    "POST": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "authData"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "email"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "emailVerified"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "password"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "username"
+        }
+      ]
+    }
+  },
+  "/parse/classes/_User/{id}": {
+    "DELETE": {
+      "Path": [
+        {
+          "producer_endpoint": "/parse/classes/_User",
+          "producer_method": "POST",
+          "producer_resource_name": "objectId",
+          "consumer_param": "id"
+        }
+      ]
+    },
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/parse/classes/_User",
+          "producer_method": "POST",
+          "producer_resource_name": "objectId",
+          "consumer_param": "id"
+        }
+      ]
+    },
+    "PUT": {
+      "Path": [
+        {
+          "producer_endpoint": "/parse/classes/_User",
+          "producer_method": "POST",
+          "producer_resource_name": "objectId",
+          "consumer_param": "id"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "authData"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "email"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "emailVerified"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "password"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "username"
+        }
+      ]
+    }
+  },
+  "/parse/files/{filename}": {
+    "POST": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "filename"
+        }
+      ]
+    }
+  }
+}

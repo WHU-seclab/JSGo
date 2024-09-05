@@ -1,0 +1,74 @@
+This file contains the failing requests, ordered by the number of blocked dependent requests.
+To improve coverage, fix the failing requests in the order listed in this file.
+
+Note: some requests are labeled as 'sequence failure'.
+This means the request depends on another request that is failing intermittently.
+For example, a DELETE request for a resource may be skipped because the resource
+PUT request failed due to exceeding quota.  The same PUT request succeeded earlier (and may
+succeed later depending on the resource clean-up behavior in the service), so it is
+considered an intermittent failure.
+
+-----------------------------------------------
+Request: Post /parse/classes/_Role
+Number of blocked dependent requests: 3
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> POST /parse/classes/_Role HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nX-Parse-Application-Id: APPLICATION_ID\r\nX-Parse-REST-API-Key: MASTER_KEY\r\nContent-Type: application/json\r\n\r\n{\n    "name":"fuzzstring",\n    "users":{ "fuzz": false },\n    "roles":{ "fuzz": false }}\r\n
+	< HTTP/1.1 400 Bad Request\r\nX-Powered-By: Express\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS\r\nAccess-Control-Allow-Headers: X-Parse-Master-Key, X-Parse-REST-API-Key, X-Parse-Javascript-Key, X-Parse-Application-Id, X-Parse-Client-Version, X-Parse-Session-Token, X-Requested-With, X-Parse-Revocable-Session, X-Parse-Request-Id, Content-Type, Pragma, Cache-Control\r\nAccess-Control-Expose-Headers: X-Parse-Job-Status-Id, X-Parse-Push-Status-Id\r\nContent-Type: application/json; charset=utf-8\r\nContent-Length: 95\r\nETag: W/"5f-MrCYuC8TqNYB3BWIseJm3cppYPg"\r\nDate: Sat, 09 Dec 2023 14:11:35 GMT\r\nConnection: keep-alive\r\nKeep-Alive: timeout=5\r\n\r\n{"code":111,"error":"schema mismatch for _Role.users; expected Relation<_User> but got Object"}
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> POST /parse/classes/_Role HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.1 403 Forbidden\r\nX-Powered-By: Express\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS\r\nAccess-Control-Allow-Headers: X-Parse-Master-Key, X-Parse-REST-API-Key, X-Parse-Javascript-Key, X-Parse-Application-Id, X-Parse-Client-Version, X-Parse-Session-Token, X-Requested-With, X-Parse-Revocable-Session, X-Parse-Request-Id, Content-Type, Pragma, Cache-Control\r\nAccess-Control-Expose-Headers: X-Parse-Job-Status-Id, X-Parse-Push-Status-Id\r\nDate: Sat, 09 Dec 2023 14:12:04 GMT\r\nConnection: keep-alive\r\nKeep-Alive: timeout=5\r\nContent-Length: 24\r\n\r\n{"error":"unauthorized"}
+
+
+-----------------------------------------------
+Request: Post /parse/classes/_User
+Number of blocked dependent requests: 3
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> POST /parse/classes/_User HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nX-Parse-Application-Id: APPLICATION_ID\r\nX-Parse-REST-API-Key: MASTER_KEY\r\nContent-Type: application/json\r\n\r\n{\n    "username":"fuzzstring",\n    "password":"fuzzstring",\n    "email":"fuzzstring",\n    "emailVerified":true,\n    "authData":{ "fuzz": false }}\r\n
+	< HTTP/1.1 400 Bad Request\r\nX-Powered-By: Express\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS\r\nAccess-Control-Allow-Headers: X-Parse-Master-Key, X-Parse-REST-API-Key, X-Parse-Javascript-Key, X-Parse-Application-Id, X-Parse-Client-Version, X-Parse-Session-Token, X-Requested-With, X-Parse-Revocable-Session, X-Parse-Request-Id, Content-Type, Pragma, Cache-Control\r\nAccess-Control-Expose-Headers: X-Parse-Job-Status-Id, X-Parse-Push-Status-Id\r\nContent-Type: application/json; charset=utf-8\r\nContent-Length: 65\r\nETag: W/"41-DVwBB+94mFbqpEXeMgK7KnbAzO4"\r\nDate: Sat, 09 Dec 2023 14:12:05 GMT\r\nConnection: keep-alive\r\nKeep-Alive: timeout=5\r\n\r\n{"code":252,"error":"This authentication method is unsupported."}
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> POST /parse/classes/_User HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.1 403 Forbidden\r\nX-Powered-By: Express\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS\r\nAccess-Control-Allow-Headers: X-Parse-Master-Key, X-Parse-REST-API-Key, X-Parse-Javascript-Key, X-Parse-Application-Id, X-Parse-Client-Version, X-Parse-Session-Token, X-Requested-With, X-Parse-Revocable-Session, X-Parse-Request-Id, Content-Type, Pragma, Cache-Control\r\nAccess-Control-Expose-Headers: X-Parse-Job-Status-Id, X-Parse-Push-Status-Id\r\nDate: Sat, 09 Dec 2023 14:12:47 GMT\r\nConnection: keep-alive\r\nKeep-Alive: timeout=5\r\nContent-Length: 24\r\n\r\n{"error":"unauthorized"}
+
+
+-----------------------------------------------
+Request: Post /parse/batch
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> POST /parse/batch HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nAccept: fuzzstring\r\nX-Parse-Application-Id: APPLICATION_ID\r\nX-Parse-REST-API-Key: MASTER_KEY\r\nContent-Type: application/json\r\n\r\n{\n    "requests":\n    [\n        {\n            "method":"fuzzstring",\n            "path":"fuzzstring",\n            "body":{ "fuzz": false }\n        }\n    ]}\r\n
+	< HTTP/1.1 400 Bad Request\r\nX-Powered-By: Express\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS\r\nAccess-Control-Allow-Headers: X-Parse-Master-Key, X-Parse-REST-API-Key, X-Parse-Javascript-Key, X-Parse-Application-Id, X-Parse-Client-Version, X-Parse-Session-Token, X-Requested-With, X-Parse-Revocable-Session, X-Parse-Request-Id, Content-Type, Pragma, Cache-Control\r\nAccess-Control-Expose-Headers: X-Parse-Job-Status-Id, X-Parse-Push-Status-Id\r\nContent-Type: application/json; charset=utf-8\r\nContent-Length: 57\r\nETag: W/"39-tRJREhWW72eiSIStYQjTxM7dOPA"\r\nDate: Sat, 09 Dec 2023 14:12:48 GMT\r\nConnection: keep-alive\r\nKeep-Alive: timeout=5\r\n\r\n{"code":107,"error":"cannot route batch path fuzzstring"}
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> POST /parse/batch HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nAccept: fuzzstring\r\nAccept: fuzzstring\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.1 403 Forbidden\r\nX-Powered-By: Express\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS\r\nAccess-Control-Allow-Headers: X-Parse-Master-Key, X-Parse-REST-API-Key, X-Parse-Javascript-Key, X-Parse-Application-Id, X-Parse-Client-Version, X-Parse-Session-Token, X-Requested-With, X-Parse-Revocable-Session, X-Parse-Request-Id, Content-Type, Pragma, Cache-Control\r\nAccess-Control-Expose-Headers: X-Parse-Job-Status-Id, X-Parse-Push-Status-Id\r\nDate: Sat, 09 Dec 2023 14:13:18 GMT\r\nConnection: keep-alive\r\nKeep-Alive: timeout=5\r\nContent-Length: 24\r\n\r\n{"error":"unauthorized"}
+
+
+-----------------------------------------------
+Request: Post /parse/files/{filename}
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> POST /parse/files/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nX-Parse-Application-Id: APPLICATION_ID\r\nX-Parse-REST-API-Key: MASTER_KEY\r\n\r\n
+	< HTTP/1.1 400 Bad Request\r\nX-Powered-By: Express\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS\r\nAccess-Control-Allow-Headers: X-Parse-Master-Key, X-Parse-REST-API-Key, X-Parse-Javascript-Key, X-Parse-Application-Id, X-Parse-Client-Version, X-Parse-Session-Token, X-Requested-With, X-Parse-Revocable-Session, X-Parse-Request-Id, Content-Type, Pragma, Cache-Control\r\nAccess-Control-Expose-Headers: X-Parse-Job-Status-Id, X-Parse-Push-Status-Id\r\nContent-Type: application/json; charset=utf-8\r\nContent-Length: 57\r\nETag: W/"39-nr71fAI8MSHXFC9vcDAdU6H+0q0"\r\nDate: Sat, 09 Dec 2023 14:13:56 GMT\r\nConnection: keep-alive\r\nKeep-Alive: timeout=5\r\n\r\n{"code":130,"error":"File upload by public is disabled."}
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> POST /parse/files/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\n\r\n
+	< HTTP/1.1 403 Forbidden\r\nX-Powered-By: Express\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS\r\nAccess-Control-Allow-Headers: X-Parse-Master-Key, X-Parse-REST-API-Key, X-Parse-Javascript-Key, X-Parse-Application-Id, X-Parse-Client-Version, X-Parse-Session-Token, X-Requested-With, X-Parse-Revocable-Session, X-Parse-Request-Id, Content-Type, Pragma, Cache-Control\r\nAccess-Control-Expose-Headers: X-Parse-Job-Status-Id, X-Parse-Push-Status-Id\r\nDate: Sat, 09 Dec 2023 14:14:10 GMT\r\nConnection: keep-alive\r\nKeep-Alive: timeout=5\r\nContent-Length: 24\r\n\r\n{"error":"unauthorized"}
+
+

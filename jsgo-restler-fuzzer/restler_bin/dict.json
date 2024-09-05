@@ -1,0 +1,10 @@
+{
+  "restler_custom_payload": {},
+  "restler_custom_payload_uuid4_suffix": {},
+  "restler_custom_payload_header": 
+  {
+	  "X-Parse-Application-Id": ["APPLICATION_ID"],
+	  "X-Parse-REST-API-Key": ["MASTER_KEY"]
+  },
+  "restler_custom_payload_query": {}
+}

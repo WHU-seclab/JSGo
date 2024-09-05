@@ -1,0 +1,22 @@
+Entry: PushController.spec.js, Value: should support full RESTQuery for increment
+Error: Custom error message
+    at expandResultOnKeyPath (/Apps/parse-server/lib/Controllers/DatabaseController.js:256:15)
+    at /Apps/parse-server/lib/Controllers/DatabaseController.js:279:7
+    at Array.forEach (<anonymous>)
+    at sanitizeDatabaseResult (/Apps/parse-server/lib/Controllers/DatabaseController.js:273:31)
+    at /Apps/parse-server/lib/Controllers/DatabaseController.js:599:16
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Error: Custom error message
+    at expandResultOnKeyPath (/Apps/parse-server/lib/Controllers/DatabaseController.js:256:15)
+    at /Apps/parse-server/lib/Controllers/DatabaseController.js:279:7
+    at Array.forEach (<anonymous>)
+    at sanitizeDatabaseResult (/Apps/parse-server/lib/Controllers/DatabaseController.js:273:31)
+    at /Apps/parse-server/lib/Controllers/DatabaseController.js:599:16
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Error: Custom error message
+    at expandResultOnKeyPath (/Apps/parse-server/lib/Controllers/DatabaseController.js:256:15)
+    at /Apps/parse-server/lib/Controllers/DatabaseController.js:279:7
+    at Array.forEach (<anonymous>)
+    at sanitizeDatabaseResult (/Apps/parse-server/lib/Controllers/DatabaseController.js:273:31)
+    at /Apps/parse-server/lib/Controllers/DatabaseController.js:599:16
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

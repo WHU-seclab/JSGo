@@ -1,0 +1,24 @@
+################################################################################
+ PayloadBodyChecker_500
+
+ StructMissing_/+method/+path/+body
+{'requests': [{'fuzz': False}]}
+
+ Hash: PayloadBodyChecker_500_109c2b4e1de86caa5debcaacef2fb545391fa790
+
+ To attempt to reproduce this bug using restler, run restler with the command
+ line option of --replay_log <path_to_this_log>.
+ If an authentication token is required, you must also specify the token_refresh_cmd.
+
+ This log may contain specific values for IDs or names that were generated
+ during fuzzing, using the fuzzing dictionary. Such names will be re-played
+ without modification. You must update the replay log manually with any changes
+ required to execute the requests in your environment (for example, replacing
+ pre-created account, subscription, or other resource IDs, as needed).
+################################################################################
+
+-> POST /parse/batch HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nAccept: fuzzstring\r\nX-Parse-Application-Id: APPLICATION_ID\r\nX-Parse-REST-API-Key: MASTER_KEY\r\nContent-Type: application/json\r\n\r\n{"requests":[{ "fuzz" : false }]}
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 500 Internal Server Error\r\nX-Powered-By: Express\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS\r\nAccess-Control-Allow-Headers: X-Parse-Master-Key, X-Parse-REST-API-Key, X-Parse-Javascript-Key, X-Parse-Application-Id, X-Parse-Client-Version, X-Parse-Session-Token, X-Requested-With, X-Parse-Revocable-Session, X-Parse-Request-Id, Content-Type, Pragma, Cache-Control\r\nAccess-Control-Expose-Headers: X-Parse-Job-Status-Id, X-Parse-Push-Status-Id\r\nContent-Type: application/json; charset=utf-8\r\nContent-Length: 45\r\nETag: W/"2d-w030VvQp6oxnghmIU/h559WBxgM"\r\nDate: Sat, 09 Dec 2023 14:12:52 GMT\r\nConnection: keep-alive\r\nKeep-Alive: timeout=5\r\n\r\n{"code":1,"message":"Internal server error."}'
+

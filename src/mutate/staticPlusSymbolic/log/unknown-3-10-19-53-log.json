@@ -1,0 +1,50 @@
+{
+    "source": "/pppj/src/mutate/staticPlusSymbolic/example_2.js",
+    "start": 1710071633543,
+    "end": 1710071639321,
+    "firstHit": "-1",
+    "undefinedMap": {
+        "{\"_bound\":0,\"A\":0,\"B\":0}": [
+            "A",
+            "B"
+        ]
+    },
+    "done": [
+        {
+            "id": 0,
+            "input": {
+                "_bound": 0,
+                "A": 0,
+                "B": 0
+            },
+            "stringifiedPC": "(not (> A 3.0)),(not (= A 126.0)),(not (= (+ 0.0 (* 2.0 A) B 10.0) 123.0))",
+            "foundGagdet": false,
+            "alternatives": [
+                {
+                    "input": {
+                        "A": 4,
+                        "B": 0,
+                        "_bound": 1
+                    },
+                    "pc": "",
+                    "forkIid": 16,
+                    "forinLoad": false,
+                    "forinKeys": []
+                },
+                {
+                    "input": {
+                        "A": 0,
+                        "B": 113,
+                        "_bound": 3
+                    },
+                    "pc": "",
+                    "forkIid": 24,
+                    "forinLoad": false,
+                    "forinKeys": []
+                }
+            ],
+            "helperPool": [],
+            "time": 5768
+        }
+    ]
+}

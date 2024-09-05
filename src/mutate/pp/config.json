@@ -1,0 +1,10 @@
+{
+  "variable_names": "keyUpdate", 
+  "source_file": "/Apps/parse-server/lib/Controllers/DatabaseController.js", 
+  "line_number_before": 290,
+  "line_number_after": 302,
+  "commands": "./pp/run.sh,./pp/stop.sh,./pp/replay.sh,./pp/testsuite.sh",
+  "next_hit_target": 272,
+  "sink_line_number": [269],
+  "sink_type": "pp"
+}

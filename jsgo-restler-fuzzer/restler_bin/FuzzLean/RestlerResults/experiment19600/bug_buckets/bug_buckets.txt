@@ -1,0 +1,39 @@
+PayloadBodyChecker_500: 6
+InvalidDynamicObjectChecker_20x: 2
+Total Buckets: 8
+-------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_1.replay.txt
+Hash: PayloadBodyChecker_500_d3529dd26a52410b598869209bed50e03335bbc5
+POST /parse/batch HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nAccept: fuzzstring\r\nX-Parse-Application-Id: X-Parse-Application-Id\r\nX-Parse-REST-API-Key: X-Parse-REST-API-Key\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"requests":[{"method":"fuzzstring"}]}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_2.replay.txt
+Hash: PayloadBodyChecker_500_469f64c93ef6f2aa535784a91c96f7d4ada89c91
+POST /parse/batch HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nAccept: fuzzstring\r\nX-Parse-Application-Id: X-Parse-Application-Id\r\nX-Parse-REST-API-Key: X-Parse-REST-API-Key\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"requests":[{"body":{ "fuzz" : false }}]}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_3.replay.txt
+Hash: PayloadBodyChecker_500_24f1060188334c6e1de07fde638e9414ce9e98c0
+POST /parse/batch HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nAccept: fuzzstring\r\nX-Parse-Application-Id: X-Parse-Application-Id\r\nX-Parse-REST-API-Key: X-Parse-REST-API-Key\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"requests":[{"path":{ "fuzz" : false }}]}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_4.replay.txt
+Hash: PayloadBodyChecker_500_408eff875b9e8e66df5ac6c4cf12726fb012e690
+POST /parse/batch HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nAccept: fuzzstring\r\nX-Parse-Application-Id: X-Parse-Application-Id\r\nX-Parse-REST-API-Key: X-Parse-REST-API-Key\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"requests":[false]}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_5.replay.txt
+Hash: PayloadBodyChecker_500_7d84001b6e21ffe73bc3fd213255542d1405b4c0
+POST /parse/batch HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nAccept: fuzzstring\r\nX-Parse-Application-Id: X-Parse-Application-Id\r\nX-Parse-REST-API-Key: X-Parse-REST-API-Key\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"requests":[{"method":{ "fuzz" : false }}]}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_6.replay.txt
+Hash: PayloadBodyChecker_500_109c2b4e1de86caa5debcaacef2fb545391fa790
+POST /parse/batch HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nAccept: fuzzstring\r\nX-Parse-Application-Id: X-Parse-Application-Id\r\nX-Parse-REST-API-Key: X-Parse-REST-API-Key\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"requests":[{ "fuzz" : false }]}
+--------------------------------------------------------------------------------
+InvalidDynamicObjectChecker_20x - Unable to reproduce bug - InvalidDynamicObjectChecker_20x_1.replay.txt
+Attempted to reproduce 1 time(s); Reproduced 0 time(s)
+Hash: InvalidDynamicObjectChecker_20x_e27b747a6f56273a1f116af3ca5813e0578ed4ee
+POST /parse/classes/GameScore HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nX-Parse-Application-Id: X-Parse-Application-Id\r\nX-Parse-REST-API-Key: X-Parse-REST-API-Key\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "score":1.23,\n    "playerName":fuzzstring,\n    "cheatMode":true}\r\n
+DELETE /parse/classes/GameScore/_READER_DELIM_parse_classes_GameScore_post_objectId_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nX-Parse-Application-Id: X-Parse-Application-Id\r\nX-Parse-REST-API-Key: X-Parse-REST-API-Key\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+InvalidDynamicObjectChecker_20x - Bug was reproduced - InvalidDynamicObjectChecker_20x_2.replay.txt
+Hash: InvalidDynamicObjectChecker_20x_861fb7eeb58a5c9bcb4c8068246b660bae1421ff
+POST /parse/classes/GameScore HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nX-Parse-Application-Id: X-Parse-Application-Id\r\nX-Parse-REST-API-Key: X-Parse-REST-API-Key\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "score":1.23,\n    "playerName":fuzzstring,\n    "cheatMode":true}\r\n
+PUT /parse/classes/GameScore/_READER_DELIM_parse_classes_GameScore_post_objectId_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:1337\r\nX-Parse-Application-Id: X-Parse-Application-Id\r\nX-Parse-REST-API-Key: X-Parse-REST-API-Key\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "score":1.23,\n    "playerName":fuzzstring,\n    "cheatMode":true}\r\n
+--------------------------------------------------------------------------------

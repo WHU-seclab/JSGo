@@ -1,0 +1,1654 @@
+id:ID	labels:label	type	flags:string[]	lineno:int	code	childnum:int	funcid:int	classname	namespace	endlineno:int	name	doccomment	export	tainted
+0	Filesystem	File									stdin		True	
+1	AST	AST_TOPLEVEL	TOPLEVEL_FILE	1					1::1:40	1	stdin		True	
+2	Artificial	CFG_FUNC_ENTRY					1				stdin		True	
+3	Artificial	CFG_FUNC_EXIT					1				stdin		True	
+4	AST	AST_STMT_LIST		1		0	1		1::1:40	1			True	
+5	AST	AST_ASSIGN		1	main_func=require('./example_1.js')	0	1		1:4:1:39	1			True	
+6	AST	AST_VAR	JS_DECL_VAR	1		0	1		1:4:1:13	1			True	
+7	AST	string		1	main_func	0	1		1:4:1:13	1	main_func		True	
+8	AST	AST_CALL	JS_REQUIRE_EXTERNAL	1	require('./example_1.js')	1	1		1:14:1:39	1	/pppj/src/mutate/staticPlusSymbolic/example_1.js		True	
+9	AST	AST_NAME	NAME_NOT_FQ	1		0	1		1:14:1:39	1			True	
+10	AST	string		1	require	0	1		1:14:1:21	1			True	
+11	AST	AST_ARG_LIST		1	('./example_1.js')	1	1		1:14:1:39	1			True	
+12	AST	string		1	./example_1.js	0	1		1:22:1:38	1			True	
+13	Filesystem	File									/pppj/src/mutate/staticPlusSymbolic/example_1.js		True	
+14	AST	AST_TOPLEVEL	TOPLEVEL_FILE	1					1::31:43	31	/pppj/src/mutate/staticPlusSymbolic/example_1.js		True	
+15	Artificial	CFG_FUNC_ENTRY					14				/pppj/src/mutate/staticPlusSymbolic/example_1.js		True	
+16	Artificial	CFG_FUNC_EXIT					14				/pppj/src/mutate/staticPlusSymbolic/example_1.js		True	
+17	AST	AST_STMT_LIST		1		0	14		1::31:43	31			True	
+18	AST	AST_ASSIGN		1	crypto = require('crypto')	0	14		1:6:1:32	1			True	
+19	AST	AST_VAR	JS_DECL_CONST	1		0	14		1:6:1:12	1			True	
+20	AST	string		1	crypto	0	14		1:6:1:12	1	crypto		True	
+21	AST	AST_CALL	JS_REQUIRE_BUILTIN	1	require('crypto')	1	14		1:15:1:32	1	built-in		True	
+22	AST	AST_NAME	NAME_NOT_FQ	1		0	14		1:15:1:32	1			True	
+23	AST	string		1	require	0	14		1:15:1:22	1			True	
+24	AST	AST_ARG_LIST		1	('crypto')	1	14		1:15:1:32	1			True	
+25	AST	string		1	crypto	0	14		1:23:1:31	1			True	
+26	AST	AST_FUNC_DECL		3	computeComplex	1	14		3::18:1	18			True	
+27	Artificial	CFG_FUNC_ENTRY					26						True	
+28	Artificial	CFG_FUNC_EXIT					26						True	
+29	AST	string		3	computeComplex	0	26		3:9:3:23	3			True	
+30	AST	NULL		3		1	26		3::3:				True	
+31	AST	AST_PARAM_LIST		3	A, B	2	26		3::18:1	18			True	
+32	AST	AST_PARAM		3	A	0	26		3::3:				True	
+33	AST	NULL		3	any	0	26		3::3:				True	
+34	AST	string		3	A	1	26		3:24:3:25	3			True	
+35	AST	NULL		3	any	2	26		3::3:				True	
+36	AST	AST_PARAM		3	B	1	26		3::3:				True	
+37	AST	NULL		3	any	0	26		3::3:				True	
+38	AST	string		3	B	1	26		3:27:3:28	3			True	
+39	AST	NULL		3	any	2	26		3::3:				True	
+40	AST	AST_STMT_LIST		3		3	26		3:30:18:1	18			True	
+41	AST	AST_ASSIGN		4	result = 0	0	26		4:8:4:18	4			True	
+42	AST	AST_VAR	JS_DECL_LET	4		0	26		4:8:4:14	4			True	
+43	AST	string		4	result	0	26		4:8:4:14	4	result		True	
+44	AST	integer		4	0	1	26		4:17:4:18	4			True	
+45	AST	AST_IF		5		1	26		5:4:15:5	15			True	
+46	AST	AST_IF_ELEM		5		0	26		5:4:15:5	15			True	
+47	AST	AST_BINARY_OP		5	A>3	0	26		5:8:5:11	5			True	
+48	AST	AST_VAR		5		0	26		5:8:5:9	5			True	
+49	AST	string		5	A	0	26		5:8:5:9	5	A		True	
+50	AST	integer		5	3	1	26		5:10:5:11	5			True	
+51	AST	AST_STMT_LIST		5		1	26		5:13:7:5	7			True	
+52	AST	AST_ASSIGN		6	B=B*A	0	26		6:8:6:13	6			True	
+53	AST	AST_VAR		6		0	26		6:8:6:9	6			True	
+54	AST	string		6	B	0	26		6:8:6:9	6	B		True	
+55	AST	AST_BINARY_OP	BINARY_MUL	6	B*A	1	26		6:10:6:13	6			True	
+56	AST	AST_VAR		6		0	26		6:10:6:11	6			True	
+57	AST	string		6	B	0	26		6:10:6:11	6	B		True	
+58	AST	AST_VAR		6		1	26		6:12:6:13	6			True	
+59	AST	string		6	A	0	26		6:12:6:13	6	A		True	
+60	AST	AST_IF_ELEM		5		1	26		5:4:15:5	15			True	
+61	AST	NULL		5		0	26		5::5:				True	
+62	AST	AST_STMT_LIST		8		1	26		8:9:15:5	15			True	
+63	AST	AST_IF		9		0	26		9:8:14:9	14			True	
+64	AST	AST_IF_ELEM		9		0	26		9:8:14:9	14			True	
+65	AST	AST_BINARY_OP		9	B>A	0	26		9:12:9:15	9			True	
+66	AST	AST_VAR		9		0	26		9:12:9:13	9			True	
+67	AST	string		9	B	0	26		9:12:9:13	9	B		True	
+68	AST	AST_VAR		9		1	26		9:14:9:15	9			True	
+69	AST	string		9	A	0	26		9:14:9:15	9	A		True	
+70	AST	AST_STMT_LIST		9		1	26		9:17:11:9	11			True	
+71	AST	AST_ASSIGN		10	A=A-1	0	26		10:12:10:17	10			True	
+72	AST	AST_VAR		10		0	26		10:12:10:13	10			True	
+73	AST	string		10	A	0	26		10:12:10:13	10	A		True	
+74	AST	AST_BINARY_OP	BINARY_SUB	10	A-1	1	26		10:14:10:17	10			True	
+75	AST	AST_VAR		10		0	26		10:14:10:15	10			True	
+76	AST	string		10	A	0	26		10:14:10:15	10	A		True	
+77	AST	integer		10	1	1	26		10:16:10:17	10			True	
+78	AST	AST_IF_ELEM		9		1	26		9:8:14:9	14			True	
+79	AST	NULL		9		0	26		9::9:				True	
+80	AST	AST_STMT_LIST		12		1	26		12:13:14:9	14			True	
+81	AST	AST_ASSIGN		13	A=2*A	0	26		13:12:13:17	13			True	
+82	AST	AST_VAR		13		0	26		13:12:13:13	13			True	
+83	AST	string		13	A	0	26		13:12:13:13	13	A		True	
+84	AST	AST_BINARY_OP	BINARY_MUL	13	2*A	1	26		13:14:13:17	13			True	
+85	AST	integer		13	2	0	26		13:14:13:15	13			True	
+86	AST	AST_VAR		13		1	26		13:16:13:17	13			True	
+87	AST	string		13	A	0	26		13:16:13:17	13	A		True	
+88	AST	AST_ASSIGN		16	result=A+B	2	26		16:4:16:14	16			True	
+89	AST	AST_VAR		16		0	26		16:4:16:10	16			True	
+90	AST	string		16	result	0	26		16:4:16:10	16	result		True	
+91	AST	AST_BINARY_OP	BINARY_ADD	16	A+B	1	26		16:11:16:14	16			True	
+92	AST	AST_VAR		16		0	26		16:11:16:12	16			True	
+93	AST	string		16	A	0	26		16:11:16:12	16	A		True	
+94	AST	AST_VAR		16		1	26		16:13:16:14	16			True	
+95	AST	string		16	B	0	26		16:13:16:14	16	B		True	
+96	AST	AST_RETURN		17	return result;	3	26		17:4:17:18	17			True	
+97	AST	AST_VAR		17		0	26		17:11:17:17	17			True	
+98	AST	string		17	result	0	26		17:11:17:17	17	result		True	
+99	AST	NULL		3		4	26		3::3:				True	
+100	AST	NULL		3		5	26		3::3:				True	
+101	AST	AST_FUNC_DECL		20	processInputsAndCheckHash	2	14		20::29:1	29			True	
+102	Artificial	CFG_FUNC_ENTRY					101						True	
+103	Artificial	CFG_FUNC_EXIT					101						True	
+104	AST	string		20	processInputsAndCheckHash	0	101		20:9:20:34	20			True	
+105	AST	NULL		20		1	101		20::20:				True	
+106	AST	AST_PARAM_LIST		20	A, B	2	101		20::29:1	29			True	
+107	AST	AST_PARAM		20	A	0	101		20::20:				True	
+108	AST	NULL		20	any	0	101		20::20:				True	
+109	AST	string		20	A	1	101		20:35:20:36	20			True	
+110	AST	NULL		20	any	2	101		20::20:				True	
+111	AST	AST_PARAM		20	B	1	101		20::20:				True	
+112	AST	NULL		20	any	0	101		20::20:				True	
+113	AST	string		20	B	1	101		20:38:20:39	20			True	
+114	AST	NULL		20	any	2	101		20::20:				True	
+115	AST	AST_STMT_LIST		20		3	101		20:41:29:1	29			True	
+116	AST	AST_ASSIGN		21	C = computeComplex(A, B)	0	101		21:8:21:32	21			True	
+117	AST	AST_VAR	JS_DECL_LET	21		0	101		21:8:21:9	21			True	
+118	AST	string		21	C	0	101		21:8:21:9	21	C		True	
+119	AST	AST_CALL		21	computeComplex(A, B)	1	101		21:12:21:32	21			True	
+120	AST	AST_NAME	NAME_NOT_FQ	21		0	101		21:12:21:32	21			True	
+121	AST	string		21	computeComplex	0	101		21:12:21:26	21			True	
+122	AST	AST_ARG_LIST		21	(A, B)	1	101		21:12:21:32	21			True	
+123	AST	AST_VAR		21		0	101		21:27:21:28	21			True	
+124	AST	string		21	A	0	101		21:27:21:28	21	A		True	
+125	AST	AST_VAR		21		1	101		21:30:21:31	21			True	
+126	AST	string		21	B	0	101		21:30:21:31	21	B		True	
+127	AST	AST_ASSIGN		22	expectedHash = 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'	1	101		22:8:22:89	22			True	
+128	AST	AST_VAR	JS_DECL_LET	22		0	101		22:8:22:20	22			True	
+129	AST	string		22	expectedHash	0	101		22:8:22:20	22	expectedHash		True	
+130	AST	string		22	a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3	1	101		22:23:22:89	22			True	
+131	AST	AST_CALL		23	sink_jsfuzz(C)	2	101		23:4:23:18	23			True	
+132	AST	AST_NAME	NAME_NOT_FQ	23		0	101		23:4:23:18	23			True	
+133	AST	string		23	sink_jsfuzz	0	101		23:4:23:15	23			True	
+134	AST	AST_ARG_LIST		23	(C)	1	101		23:4:23:18	23			True	
+135	AST	AST_VAR		23		0	101		23:16:23:17	23			True	
+136	AST	string		23	C	0	101		23:16:23:17	23	C		True	
+137	AST	AST_IF		24		3	101		24:4:28:5	28			True	
+138	AST	AST_IF_ELEM		24		0	101		24:4:28:5	28			True	
+139	AST	AST_BINARY_OP	BINARY_IS_IDENTICAL	24	crypto.createHash('sha256').update(String(C)).digest('hex') === expectedHash	0	101		24:8:24:84	24			True	
+140	AST	AST_METHOD_CALL		24	crypto.createHash('sha256').update(String(C)).digest('hex')	0	101		24:8:24:67	24			True	
+141	AST	AST_METHOD_CALL		24	crypto.createHash('sha256').update(String(C))	0	101		24:8:24:53	24			True	
+142	AST	AST_METHOD_CALL		24	crypto.createHash('sha256')	0	101		24:8:24:35	24			True	
+143	AST	AST_VAR		24		0	101		24:8:24:14	24			True	
+144	AST	string		24	crypto	0	101		24:8:24:14	24	crypto		True	
+145	AST	string		24	createHash	1	101		24:15:24:25	24			True	
+146	AST	AST_ARG_LIST		24	('sha256')	2	101		24:8:24:35	24			True	
+147	AST	string		24	sha256	0	101		24:26:24:34	24			True	
+148	AST	string		24	update	1	101		24:36:24:42	24			True	
+149	AST	AST_ARG_LIST		24		2	101		24:8:24:53	24			True	
+150	AST	AST_CALL		24	String(C)	0	101		24:43:24:52	24			True	
+151	AST	AST_NAME	NAME_NOT_FQ	24		0	101		24:43:24:52	24			True	
+152	AST	string		24	String	0	101		24:43:24:49	24			True	
+153	AST	AST_ARG_LIST		24	(C)	1	101		24:43:24:52	24			True	
+154	AST	AST_VAR		24		0	101		24:50:24:51	24			True	
+155	AST	string		24	C	0	101		24:50:24:51	24	C		True	
+156	AST	string		24	digest	1	101		24:54:24:60	24			True	
+157	AST	AST_ARG_LIST		24	('hex')	2	101		24:8:24:67	24			True	
+158	AST	string		24	hex	0	101		24:61:24:66	24			True	
+159	AST	AST_VAR		24		1	101		24:72:24:84	24			True	
+160	AST	string		24	expectedHash	0	101		24:72:24:84	24	expectedHash		True	
+161	AST	AST_STMT_LIST		24		1	101		24:86:26:5	26			True	
+162	AST	AST_RETURN		25	return true;	0	101		25:8:25:20	25		We want to generate new inputs to satisfy this complex condition	True	
+163	AST	AST_CONST		25	true	0	101		25::25:				True	
+164	AST	AST_NAME	NAME_NOT_FQ	25	true	0	101		25::25:				True	
+165	AST	string		25	true	0	101		25::25:				True	
+166	AST	AST_IF_ELEM		24		1	101		24:4:28:5	28			True	
+167	AST	NULL		24		0	101		24::24:				True	
+168	AST	AST_STMT_LIST		26		1	101		26:11:28:5	28			True	
+169	AST	AST_RETURN		27	return false;	0	101		27:8:27:21	27			True	
+170	AST	AST_CONST		27	false	0	101		27::27:				True	
+171	AST	AST_NAME	NAME_NOT_FQ	27	false	0	101		27::27:				True	
+172	AST	string		27	false	0	101		27::27:				True	
+173	AST	NULL		20		4	101		20::20:				True	
+174	AST	NULL		20		5	101		20::20:				True	
+175	AST	AST_ASSIGN		31	module.exports = processInputsAndCheckHash	3	14		31::31:42	31			True	
+176	AST	AST_PROP		31	module.exports	0	14		31::31:14	31			True	
+177	AST	AST_VAR		31		0	14		31::31:6	31			True	
+178	AST	string		31	module	0	14		31::31:6	31	module		True	
+179	AST	string		31	exports	1	14		31:7:31:14	31			True	
+180	AST	AST_VAR		31		1	14		31:17:31:42	31			True	
+181	AST	string		31	processInputsAndCheckHash	0	14		31:17:31:42	31	processInputsAndCheckHash		True	
+182	Scope	BASE_SCOPE									Base		True	
+183	Name	NAMENODE									global		True	
+184	Object	object											True	
+185	Name	NAMENODE									null		True	
+186	Object	object			null								True	
+187	Name	NAMENODE									null		True	
+188	Object	boolean			true								True	
+189	Name	NAMENODE									true		True	
+190	Name	NAMENODE									true		True	
+191	Object	boolean			false								True	
+192	Name	NAMENODE									false		True	
+193	Name	NAMENODE									false		True	
+194	Artificial_AST	AST_CLOSURE											False	
+195	Artificial_AST	string				0					Object		False	
+196	Artificial	CFG_FUNC_ENTRY											False	
+197	Artificial	CFG_FUNC_EXIT											False	
+198	Artificial_AST	AST_PARAM_LIST				1							False	
+199	Object	function											False	
+200	Name	NAMENODE									prototype		False	
+201	Object	object			Object.prototype								False	
+202	Name	NAMENODE									Object		False	
+203	Name	NAMENODE									Object		False	
+204	Name	NAMENODE									__proto__		False	
+205	Artificial_AST	AST_CLOSURE											False	
+206	Artificial_AST	string				0					Function		False	
+207	Artificial	CFG_FUNC_ENTRY											False	
+208	Artificial	CFG_FUNC_EXIT											False	
+209	Artificial_AST	AST_PARAM_LIST				1							False	
+210	Object	function											False	
+211	Name	NAMENODE									prototype		False	
+212	Object	object			Function.prototype								False	
+213	Name	NAMENODE									Function		False	
+214	Name	NAMENODE									Function		False	
+215	Name	NAMENODE									__proto__		False	
+216	Name	NAMENODE									__proto__		False	
+217	Name	NAMENODE									__proto__		False	
+218	Artificial_AST	AST_CLOSURE											False	
+219	Artificial_AST	string				0					keys		False	
+220	Artificial	CFG_FUNC_ENTRY											False	
+221	Artificial	CFG_FUNC_EXIT											False	
+222	Artificial_AST	AST_PARAM_LIST				1							False	
+223	Object	function											False	
+224	Name	NAMENODE									prototype		False	
+225	Object	object											False	
+226	Name	NAMENODE									__proto__		False	
+227	Name	NAMENODE									constructor		False	
+228	Name	NAMENODE									__proto__		False	
+229	Name	NAMENODE									constructor		False	
+230	Name	NAMENODE									keys		False	
+231	Artificial_AST	AST_CLOSURE											False	
+232	Artificial_AST	string				0					values		False	
+233	Artificial	CFG_FUNC_ENTRY											False	
+234	Artificial	CFG_FUNC_EXIT											False	
+235	Artificial_AST	AST_PARAM_LIST				1							False	
+236	Object	function											False	
+237	Name	NAMENODE									prototype		False	
+238	Object	object											False	
+239	Name	NAMENODE									__proto__		False	
+240	Name	NAMENODE									constructor		False	
+241	Name	NAMENODE									__proto__		False	
+242	Name	NAMENODE									constructor		False	
+243	Name	NAMENODE									values		False	
+244	Artificial_AST	AST_CLOSURE											False	
+245	Artificial_AST	string				0					entries		False	
+246	Artificial	CFG_FUNC_ENTRY											False	
+247	Artificial	CFG_FUNC_EXIT											False	
+248	Artificial_AST	AST_PARAM_LIST				1							False	
+249	Object	function											False	
+250	Name	NAMENODE									prototype		False	
+251	Object	object											False	
+252	Name	NAMENODE									__proto__		False	
+253	Name	NAMENODE									constructor		False	
+254	Name	NAMENODE									__proto__		False	
+255	Name	NAMENODE									constructor		False	
+256	Name	NAMENODE									entries		False	
+257	Artificial_AST	AST_CLOSURE											False	
+258	Artificial_AST	string				0					defineProperty		False	
+259	Artificial	CFG_FUNC_ENTRY											False	
+260	Artificial	CFG_FUNC_EXIT											False	
+261	Artificial_AST	AST_PARAM_LIST				1							False	
+262	Object	function											False	
+263	Name	NAMENODE									prototype		False	
+264	Object	object											False	
+265	Name	NAMENODE									__proto__		False	
+266	Name	NAMENODE									constructor		False	
+267	Name	NAMENODE									__proto__		False	
+268	Name	NAMENODE									constructor		False	
+269	Name	NAMENODE									defineProperty		False	
+270	Artificial_AST	AST_CLOSURE											False	
+271	Artificial_AST	string				0					defineProperties		False	
+272	Artificial	CFG_FUNC_ENTRY											False	
+273	Artificial	CFG_FUNC_EXIT											False	
+274	Artificial_AST	AST_PARAM_LIST				1							False	
+275	Object	function											False	
+276	Name	NAMENODE									prototype		False	
+277	Object	object											False	
+278	Name	NAMENODE									__proto__		False	
+279	Name	NAMENODE									constructor		False	
+280	Name	NAMENODE									__proto__		False	
+281	Name	NAMENODE									constructor		False	
+282	Name	NAMENODE									defineProperties		False	
+283	Artificial_AST	AST_CLOSURE											False	
+284	Artificial_AST	string				0					assign		False	
+285	Artificial	CFG_FUNC_ENTRY											False	
+286	Artificial	CFG_FUNC_EXIT											False	
+287	Artificial_AST	AST_PARAM_LIST				1							False	
+288	Object	function											False	
+289	Name	NAMENODE									prototype		False	
+290	Object	object											False	
+291	Name	NAMENODE									__proto__		False	
+292	Name	NAMENODE									constructor		False	
+293	Name	NAMENODE									__proto__		False	
+294	Name	NAMENODE									constructor		False	
+295	Name	NAMENODE									assign		False	
+296	Artificial_AST	AST_CLOSURE											False	
+297	Artificial_AST	string				0					create		False	
+298	Artificial	CFG_FUNC_ENTRY											False	
+299	Artificial	CFG_FUNC_EXIT											False	
+300	Artificial_AST	AST_PARAM_LIST				1							False	
+301	Object	function											False	
+302	Name	NAMENODE									prototype		False	
+303	Object	object											False	
+304	Name	NAMENODE									__proto__		False	
+305	Name	NAMENODE									constructor		False	
+306	Name	NAMENODE									__proto__		False	
+307	Name	NAMENODE									constructor		False	
+308	Name	NAMENODE									create		False	
+309	Name	NAMENODE									getOwnPropertySymbols		False	
+310	Artificial_AST	AST_CLOSURE											False	
+311	Artificial_AST	string				0					toString		False	
+312	Artificial	CFG_FUNC_ENTRY											False	
+313	Artificial	CFG_FUNC_EXIT											False	
+314	Artificial_AST	AST_PARAM_LIST				1							False	
+315	Object	function											False	
+316	Name	NAMENODE									prototype		False	
+317	Object	object											False	
+318	Name	NAMENODE									__proto__		False	
+319	Name	NAMENODE									constructor		False	
+320	Name	NAMENODE									__proto__		False	
+321	Name	NAMENODE									constructor		False	
+322	Name	NAMENODE									toString		False	
+323	Artificial_AST	AST_CLOSURE											False	
+324	Artificial_AST	string				0					toLocaleString		False	
+325	Artificial	CFG_FUNC_ENTRY											False	
+326	Artificial	CFG_FUNC_EXIT											False	
+327	Artificial_AST	AST_PARAM_LIST				1							False	
+328	Object	function											False	
+329	Name	NAMENODE									prototype		False	
+330	Object	object											False	
+331	Name	NAMENODE									__proto__		False	
+332	Name	NAMENODE									constructor		False	
+333	Name	NAMENODE									__proto__		False	
+334	Name	NAMENODE									constructor		False	
+335	Name	NAMENODE									toLocaleString		False	
+336	Artificial_AST	AST_CLOSURE											False	
+337	Artificial_AST	string				0					valueOf		False	
+338	Artificial	CFG_FUNC_ENTRY											False	
+339	Artificial	CFG_FUNC_EXIT											False	
+340	Artificial_AST	AST_PARAM_LIST				1							False	
+341	Object	function											False	
+342	Name	NAMENODE									prototype		False	
+343	Object	object											False	
+344	Name	NAMENODE									__proto__		False	
+345	Name	NAMENODE									constructor		False	
+346	Name	NAMENODE									__proto__		False	
+347	Name	NAMENODE									constructor		False	
+348	Name	NAMENODE									valueOf		False	
+349	Artificial_AST	AST_CLOSURE											False	
+350	Artificial_AST	string				0					hasOwnProperty		False	
+351	Artificial	CFG_FUNC_ENTRY											False	
+352	Artificial	CFG_FUNC_EXIT											False	
+353	Artificial_AST	AST_PARAM_LIST				1							False	
+354	Object	function											False	
+355	Name	NAMENODE									prototype		False	
+356	Object	object											False	
+357	Name	NAMENODE									__proto__		False	
+358	Name	NAMENODE									constructor		False	
+359	Name	NAMENODE									__proto__		False	
+360	Name	NAMENODE									constructor		False	
+361	Name	NAMENODE									hasOwnProperty		False	
+362	Artificial_AST	AST_CLOSURE											False	
+363	Artificial_AST	string				0					call		False	
+364	Artificial	CFG_FUNC_ENTRY											False	
+365	Artificial	CFG_FUNC_EXIT											False	
+366	Artificial_AST	AST_PARAM_LIST				1							False	
+367	Object	function											False	
+368	Name	NAMENODE									prototype		False	
+369	Object	object											False	
+370	Name	NAMENODE									__proto__		False	
+371	Name	NAMENODE									constructor		False	
+372	Name	NAMENODE									__proto__		False	
+373	Name	NAMENODE									constructor		False	
+374	Name	NAMENODE									call		False	
+375	Artificial_AST	AST_CLOSURE											False	
+376	Artificial_AST	string				0					apply		False	
+377	Artificial	CFG_FUNC_ENTRY											False	
+378	Artificial	CFG_FUNC_EXIT											False	
+379	Artificial_AST	AST_PARAM_LIST				1							False	
+380	Object	function											False	
+381	Name	NAMENODE									prototype		False	
+382	Object	object											False	
+383	Name	NAMENODE									__proto__		False	
+384	Name	NAMENODE									constructor		False	
+385	Name	NAMENODE									__proto__		False	
+386	Name	NAMENODE									constructor		False	
+387	Name	NAMENODE									apply		False	
+388	Artificial_AST	AST_CLOSURE											False	
+389	Artificial_AST	string				0					bind		False	
+390	Artificial	CFG_FUNC_ENTRY											False	
+391	Artificial	CFG_FUNC_EXIT											False	
+392	Artificial_AST	AST_PARAM_LIST				1							False	
+393	Object	function											False	
+394	Name	NAMENODE									prototype		False	
+395	Object	object											False	
+396	Name	NAMENODE									__proto__		False	
+397	Name	NAMENODE									constructor		False	
+398	Name	NAMENODE									__proto__		False	
+399	Name	NAMENODE									constructor		False	
+400	Name	NAMENODE									bind		False	
+401	Artificial_AST	AST_CLOSURE											False	
+402	Artificial_AST	string				0					String		False	
+403	Artificial	CFG_FUNC_ENTRY											False	
+404	Artificial	CFG_FUNC_EXIT											False	
+405	Artificial_AST	AST_PARAM_LIST				1							False	
+406	Object	function											False	
+407	Name	NAMENODE									prototype		False	
+408	Object	object			String.prototype								False	
+409	Name	NAMENODE									__proto__		False	
+410	Name	NAMENODE									constructor		False	
+411	Name	NAMENODE									__proto__		False	
+412	Name	NAMENODE									constructor		False	
+413	Name	NAMENODE									String		False	
+414	Name	NAMENODE									String		False	
+415	Artificial_AST	AST_CLOSURE											False	
+416	Artificial_AST	string				0					match		False	
+417	Artificial	CFG_FUNC_ENTRY											False	
+418	Artificial	CFG_FUNC_EXIT											False	
+419	Artificial_AST	AST_PARAM_LIST				1							False	
+420	Object	function											False	
+421	Name	NAMENODE									prototype		False	
+422	Object	object											False	
+423	Name	NAMENODE									__proto__		False	
+424	Name	NAMENODE									constructor		False	
+425	Name	NAMENODE									__proto__		False	
+426	Name	NAMENODE									constructor		False	
+427	Name	NAMENODE									match		False	
+428	Artificial_AST	AST_CLOSURE											False	
+429	Artificial_AST	string				0					matchAll		False	
+430	Artificial	CFG_FUNC_ENTRY											False	
+431	Artificial	CFG_FUNC_EXIT											False	
+432	Artificial_AST	AST_PARAM_LIST				1							False	
+433	Object	function											False	
+434	Name	NAMENODE									prototype		False	
+435	Object	object											False	
+436	Name	NAMENODE									__proto__		False	
+437	Name	NAMENODE									constructor		False	
+438	Name	NAMENODE									__proto__		False	
+439	Name	NAMENODE									constructor		False	
+440	Name	NAMENODE									matchAll		False	
+441	Artificial_AST	AST_CLOSURE											False	
+442	Artificial_AST	string				0					replace		False	
+443	Artificial	CFG_FUNC_ENTRY											False	
+444	Artificial	CFG_FUNC_EXIT											False	
+445	Artificial_AST	AST_PARAM_LIST				1							False	
+446	Object	function											False	
+447	Name	NAMENODE									prototype		False	
+448	Object	object											False	
+449	Name	NAMENODE									__proto__		False	
+450	Name	NAMENODE									constructor		False	
+451	Name	NAMENODE									__proto__		False	
+452	Name	NAMENODE									constructor		False	
+453	Name	NAMENODE									replace		False	
+454	Artificial_AST	AST_CLOSURE											False	
+455	Artificial_AST	string				0					search		False	
+456	Artificial	CFG_FUNC_ENTRY											False	
+457	Artificial	CFG_FUNC_EXIT											False	
+458	Artificial_AST	AST_PARAM_LIST				1							False	
+459	Object	function											False	
+460	Name	NAMENODE									prototype		False	
+461	Object	object											False	
+462	Name	NAMENODE									__proto__		False	
+463	Name	NAMENODE									constructor		False	
+464	Name	NAMENODE									__proto__		False	
+465	Name	NAMENODE									constructor		False	
+466	Name	NAMENODE									search		False	
+467	Artificial_AST	AST_CLOSURE											False	
+468	Artificial_AST	string				0					split		False	
+469	Artificial	CFG_FUNC_ENTRY											False	
+470	Artificial	CFG_FUNC_EXIT											False	
+471	Artificial_AST	AST_PARAM_LIST				1							False	
+472	Object	function											False	
+473	Name	NAMENODE									prototype		False	
+474	Object	object											False	
+475	Name	NAMENODE									__proto__		False	
+476	Name	NAMENODE									constructor		False	
+477	Name	NAMENODE									__proto__		False	
+478	Name	NAMENODE									constructor		False	
+479	Name	NAMENODE									split		False	
+480	Artificial_AST	AST_CLOSURE											False	
+481	Artificial_AST	string				0					substr		False	
+482	Artificial	CFG_FUNC_ENTRY											False	
+483	Artificial	CFG_FUNC_EXIT											False	
+484	Artificial_AST	AST_PARAM_LIST				1							False	
+485	Object	function											False	
+486	Name	NAMENODE									prototype		False	
+487	Object	object											False	
+488	Name	NAMENODE									__proto__		False	
+489	Name	NAMENODE									constructor		False	
+490	Name	NAMENODE									__proto__		False	
+491	Name	NAMENODE									constructor		False	
+492	Name	NAMENODE									substr		False	
+493	Artificial_AST	AST_CLOSURE											False	
+494	Artificial_AST	string				0					substring		False	
+495	Artificial	CFG_FUNC_ENTRY											False	
+496	Artificial	CFG_FUNC_EXIT											False	
+497	Artificial_AST	AST_PARAM_LIST				1							False	
+498	Object	function											False	
+499	Name	NAMENODE									prototype		False	
+500	Object	object											False	
+501	Name	NAMENODE									__proto__		False	
+502	Name	NAMENODE									constructor		False	
+503	Name	NAMENODE									__proto__		False	
+504	Name	NAMENODE									constructor		False	
+505	Name	NAMENODE									substring		False	
+506	Artificial_AST	AST_CLOSURE											False	
+507	Artificial_AST	string				0					reverse		False	
+508	Artificial	CFG_FUNC_ENTRY											False	
+509	Artificial	CFG_FUNC_EXIT											False	
+510	Artificial_AST	AST_PARAM_LIST				1							False	
+511	Object	function											False	
+512	Name	NAMENODE									prototype		False	
+513	Object	object											False	
+514	Name	NAMENODE									__proto__		False	
+515	Name	NAMENODE									constructor		False	
+516	Name	NAMENODE									__proto__		False	
+517	Name	NAMENODE									constructor		False	
+518	Name	NAMENODE									reverse		False	
+519	Artificial_AST	AST_CLOSURE											False	
+520	Artificial_AST	string				0					toLowerCase		False	
+521	Artificial	CFG_FUNC_ENTRY											False	
+522	Artificial	CFG_FUNC_EXIT											False	
+523	Artificial_AST	AST_PARAM_LIST				1							False	
+524	Object	function											False	
+525	Name	NAMENODE									prototype		False	
+526	Object	object											False	
+527	Name	NAMENODE									__proto__		False	
+528	Name	NAMENODE									constructor		False	
+529	Name	NAMENODE									__proto__		False	
+530	Name	NAMENODE									constructor		False	
+531	Name	NAMENODE									toLowerCase		False	
+532	Artificial_AST	AST_CLOSURE											False	
+533	Artificial_AST	string				0					toUpperCase		False	
+534	Artificial	CFG_FUNC_ENTRY											False	
+535	Artificial	CFG_FUNC_EXIT											False	
+536	Artificial_AST	AST_PARAM_LIST				1							False	
+537	Object	function											False	
+538	Name	NAMENODE									prototype		False	
+539	Object	object											False	
+540	Name	NAMENODE									__proto__		False	
+541	Name	NAMENODE									constructor		False	
+542	Name	NAMENODE									__proto__		False	
+543	Name	NAMENODE									constructor		False	
+544	Name	NAMENODE									toUpperCase		False	
+545	Artificial_AST	AST_CLOSURE											False	
+546	Artificial_AST	string				0					trim		False	
+547	Artificial	CFG_FUNC_ENTRY											False	
+548	Artificial	CFG_FUNC_EXIT											False	
+549	Artificial_AST	AST_PARAM_LIST				1							False	
+550	Object	function											False	
+551	Name	NAMENODE									prototype		False	
+552	Object	object											False	
+553	Name	NAMENODE									__proto__		False	
+554	Name	NAMENODE									constructor		False	
+555	Name	NAMENODE									__proto__		False	
+556	Name	NAMENODE									constructor		False	
+557	Name	NAMENODE									trim		False	
+558	Artificial_AST	AST_CLOSURE											False	
+559	Artificial_AST	string				0					trimEnd		False	
+560	Artificial	CFG_FUNC_ENTRY											False	
+561	Artificial	CFG_FUNC_EXIT											False	
+562	Artificial_AST	AST_PARAM_LIST				1							False	
+563	Object	function											False	
+564	Name	NAMENODE									prototype		False	
+565	Object	object											False	
+566	Name	NAMENODE									__proto__		False	
+567	Name	NAMENODE									constructor		False	
+568	Name	NAMENODE									__proto__		False	
+569	Name	NAMENODE									constructor		False	
+570	Name	NAMENODE									trimEnd		False	
+571	Artificial_AST	AST_CLOSURE											False	
+572	Artificial_AST	string				0					trimStart		False	
+573	Artificial	CFG_FUNC_ENTRY											False	
+574	Artificial	CFG_FUNC_EXIT											False	
+575	Artificial_AST	AST_PARAM_LIST				1							False	
+576	Object	function											False	
+577	Name	NAMENODE									prototype		False	
+578	Object	object											False	
+579	Name	NAMENODE									__proto__		False	
+580	Name	NAMENODE									constructor		False	
+581	Name	NAMENODE									__proto__		False	
+582	Name	NAMENODE									constructor		False	
+583	Name	NAMENODE									trimStart		False	
+584	Artificial_AST	AST_CLOSURE											False	
+585	Artificial_AST	string				0					charAt		False	
+586	Artificial	CFG_FUNC_ENTRY											False	
+587	Artificial	CFG_FUNC_EXIT											False	
+588	Artificial_AST	AST_PARAM_LIST				1							False	
+589	Object	function											False	
+590	Name	NAMENODE									prototype		False	
+591	Object	object											False	
+592	Name	NAMENODE									__proto__		False	
+593	Name	NAMENODE									constructor		False	
+594	Name	NAMENODE									__proto__		False	
+595	Name	NAMENODE									constructor		False	
+596	Name	NAMENODE									charAt		False	
+597	Artificial_AST	AST_CLOSURE											False	
+598	Artificial_AST	string				0					slice		False	
+599	Artificial	CFG_FUNC_ENTRY											False	
+600	Artificial	CFG_FUNC_EXIT											False	
+601	Artificial_AST	AST_PARAM_LIST				1							False	
+602	Object	function											False	
+603	Name	NAMENODE									prototype		False	
+604	Object	object											False	
+605	Name	NAMENODE									__proto__		False	
+606	Name	NAMENODE									constructor		False	
+607	Name	NAMENODE									__proto__		False	
+608	Name	NAMENODE									constructor		False	
+609	Name	NAMENODE									slice		False	
+610	Artificial_AST	AST_CLOSURE											False	
+611	Artificial_AST	string				0					Number		False	
+612	Artificial	CFG_FUNC_ENTRY											False	
+613	Artificial	CFG_FUNC_EXIT											False	
+614	Artificial_AST	AST_PARAM_LIST				1							False	
+615	Object	function											False	
+616	Name	NAMENODE									prototype		False	
+617	Object	object			Number.prototype								False	
+618	Name	NAMENODE									__proto__		False	
+619	Name	NAMENODE									constructor		False	
+620	Name	NAMENODE									__proto__		False	
+621	Name	NAMENODE									constructor		False	
+622	Name	NAMENODE									Number		False	
+623	Name	NAMENODE									Number		False	
+624	Artificial_AST	AST_CLOSURE											False	
+625	Artificial_AST	string				0					Array		False	
+626	Artificial	CFG_FUNC_ENTRY											False	
+627	Artificial	CFG_FUNC_EXIT											False	
+628	Artificial_AST	AST_PARAM_LIST				1							False	
+629	Object	function											False	
+630	Name	NAMENODE									prototype		False	
+631	Object	object			Array.prototype								False	
+632	Name	NAMENODE									__proto__		False	
+633	Name	NAMENODE									constructor		False	
+634	Name	NAMENODE									__proto__		False	
+635	Name	NAMENODE									constructor		False	
+636	Name	NAMENODE									Array		False	
+637	Name	NAMENODE									Array		False	
+638	Artificial_AST	AST_CLOSURE											False	
+639	Artificial_AST	string				0					isArray		False	
+640	Artificial	CFG_FUNC_ENTRY											False	
+641	Artificial	CFG_FUNC_EXIT											False	
+642	Artificial_AST	AST_PARAM_LIST				1							False	
+643	Object	function											False	
+644	Name	NAMENODE									prototype		False	
+645	Object	object											False	
+646	Name	NAMENODE									__proto__		False	
+647	Name	NAMENODE									constructor		False	
+648	Name	NAMENODE									__proto__		False	
+649	Name	NAMENODE									constructor		False	
+650	Name	NAMENODE									isArray		False	
+651	Artificial_AST	AST_CLOSURE											False	
+652	Artificial_AST	string				0					push		False	
+653	Artificial	CFG_FUNC_ENTRY											False	
+654	Artificial	CFG_FUNC_EXIT											False	
+655	Artificial_AST	AST_PARAM_LIST				1							False	
+656	Object	function											False	
+657	Name	NAMENODE									prototype		False	
+658	Object	object											False	
+659	Name	NAMENODE									__proto__		False	
+660	Name	NAMENODE									constructor		False	
+661	Name	NAMENODE									__proto__		False	
+662	Name	NAMENODE									constructor		False	
+663	Name	NAMENODE									push		False	
+664	Artificial_AST	AST_CLOSURE											False	
+665	Artificial_AST	string				0					pop		False	
+666	Artificial	CFG_FUNC_ENTRY											False	
+667	Artificial	CFG_FUNC_EXIT											False	
+668	Artificial_AST	AST_PARAM_LIST				1							False	
+669	Object	function											False	
+670	Name	NAMENODE									prototype		False	
+671	Object	object											False	
+672	Name	NAMENODE									__proto__		False	
+673	Name	NAMENODE									constructor		False	
+674	Name	NAMENODE									__proto__		False	
+675	Name	NAMENODE									constructor		False	
+676	Name	NAMENODE									pop		False	
+677	Artificial_AST	AST_CLOSURE											False	
+678	Artificial_AST	string				0					unshift		False	
+679	Artificial	CFG_FUNC_ENTRY											False	
+680	Artificial	CFG_FUNC_EXIT											False	
+681	Artificial_AST	AST_PARAM_LIST				1							False	
+682	Object	function											False	
+683	Name	NAMENODE									prototype		False	
+684	Object	object											False	
+685	Name	NAMENODE									__proto__		False	
+686	Name	NAMENODE									constructor		False	
+687	Name	NAMENODE									__proto__		False	
+688	Name	NAMENODE									constructor		False	
+689	Name	NAMENODE									unshift		False	
+690	Artificial_AST	AST_CLOSURE											False	
+691	Artificial_AST	string				0					shift		False	
+692	Artificial	CFG_FUNC_ENTRY											False	
+693	Artificial	CFG_FUNC_EXIT											False	
+694	Artificial_AST	AST_PARAM_LIST				1							False	
+695	Object	function											False	
+696	Name	NAMENODE									prototype		False	
+697	Object	object											False	
+698	Name	NAMENODE									__proto__		False	
+699	Name	NAMENODE									constructor		False	
+700	Name	NAMENODE									__proto__		False	
+701	Name	NAMENODE									constructor		False	
+702	Name	NAMENODE									shift		False	
+703	Artificial_AST	AST_CLOSURE											False	
+704	Artificial_AST	string				0					join		False	
+705	Artificial	CFG_FUNC_ENTRY											False	
+706	Artificial	CFG_FUNC_EXIT											False	
+707	Artificial_AST	AST_PARAM_LIST				1							False	
+708	Object	function											False	
+709	Name	NAMENODE									prototype		False	
+710	Object	object											False	
+711	Name	NAMENODE									__proto__		False	
+712	Name	NAMENODE									constructor		False	
+713	Name	NAMENODE									__proto__		False	
+714	Name	NAMENODE									constructor		False	
+715	Name	NAMENODE									join		False	
+716	Artificial_AST	AST_CLOSURE											False	
+717	Artificial_AST	string				0					forEach		False	
+718	Artificial	CFG_FUNC_ENTRY											False	
+719	Artificial	CFG_FUNC_EXIT											False	
+720	Artificial_AST	AST_PARAM_LIST				1							False	
+721	Object	function											False	
+722	Name	NAMENODE									prototype		False	
+723	Object	object											False	
+724	Name	NAMENODE									__proto__		False	
+725	Name	NAMENODE									constructor		False	
+726	Name	NAMENODE									__proto__		False	
+727	Name	NAMENODE									constructor		False	
+728	Name	NAMENODE									forEach		False	
+729	Artificial_AST	AST_CLOSURE											False	
+730	Artificial_AST	string				0					keys		False	
+731	Artificial	CFG_FUNC_ENTRY											False	
+732	Artificial	CFG_FUNC_EXIT											False	
+733	Artificial_AST	AST_PARAM_LIST				1							False	
+734	Object	function											False	
+735	Name	NAMENODE									prototype		False	
+736	Object	object											False	
+737	Name	NAMENODE									__proto__		False	
+738	Name	NAMENODE									constructor		False	
+739	Name	NAMENODE									__proto__		False	
+740	Name	NAMENODE									constructor		False	
+741	Name	NAMENODE									keys		False	
+742	Artificial_AST	AST_CLOSURE											False	
+743	Artificial_AST	string				0					values		False	
+744	Artificial	CFG_FUNC_ENTRY											False	
+745	Artificial	CFG_FUNC_EXIT											False	
+746	Artificial_AST	AST_PARAM_LIST				1							False	
+747	Object	function											False	
+748	Name	NAMENODE									prototype		False	
+749	Object	object											False	
+750	Name	NAMENODE									__proto__		False	
+751	Name	NAMENODE									constructor		False	
+752	Name	NAMENODE									__proto__		False	
+753	Name	NAMENODE									constructor		False	
+754	Name	NAMENODE									values		False	
+755	Artificial_AST	AST_CLOSURE											False	
+756	Artificial_AST	string				0					entries		False	
+757	Artificial	CFG_FUNC_ENTRY											False	
+758	Artificial	CFG_FUNC_EXIT											False	
+759	Artificial_AST	AST_PARAM_LIST				1							False	
+760	Object	function											False	
+761	Name	NAMENODE									prototype		False	
+762	Object	object											False	
+763	Name	NAMENODE									__proto__		False	
+764	Name	NAMENODE									constructor		False	
+765	Name	NAMENODE									__proto__		False	
+766	Name	NAMENODE									constructor		False	
+767	Name	NAMENODE									entries		False	
+768	Artificial_AST	AST_CLOSURE											False	
+769	Artificial_AST	string				0					splice		False	
+770	Artificial	CFG_FUNC_ENTRY											False	
+771	Artificial	CFG_FUNC_EXIT											False	
+772	Artificial_AST	AST_PARAM_LIST				1							False	
+773	Object	function											False	
+774	Name	NAMENODE									prototype		False	
+775	Object	object											False	
+776	Name	NAMENODE									__proto__		False	
+777	Name	NAMENODE									constructor		False	
+778	Name	NAMENODE									__proto__		False	
+779	Name	NAMENODE									constructor		False	
+780	Name	NAMENODE									splice		False	
+781	Artificial_AST	AST_CLOSURE											False	
+782	Artificial_AST	string				0					slice		False	
+783	Artificial	CFG_FUNC_ENTRY											False	
+784	Artificial	CFG_FUNC_EXIT											False	
+785	Artificial_AST	AST_PARAM_LIST				1							False	
+786	Object	function											False	
+787	Name	NAMENODE									prototype		False	
+788	Object	object											False	
+789	Name	NAMENODE									__proto__		False	
+790	Name	NAMENODE									constructor		False	
+791	Name	NAMENODE									__proto__		False	
+792	Name	NAMENODE									constructor		False	
+793	Name	NAMENODE									slice		False	
+794	Artificial_AST	AST_CLOSURE											False	
+795	Artificial_AST	string				0					filter		False	
+796	Artificial	CFG_FUNC_ENTRY											False	
+797	Artificial	CFG_FUNC_EXIT											False	
+798	Artificial_AST	AST_PARAM_LIST				1							False	
+799	Object	function											False	
+800	Name	NAMENODE									prototype		False	
+801	Object	object											False	
+802	Name	NAMENODE									__proto__		False	
+803	Name	NAMENODE									constructor		False	
+804	Name	NAMENODE									__proto__		False	
+805	Name	NAMENODE									constructor		False	
+806	Name	NAMENODE									filter		False	
+807	Artificial_AST	AST_CLOSURE											False	
+808	Artificial_AST	string				0					map		False	
+809	Artificial	CFG_FUNC_ENTRY											False	
+810	Artificial	CFG_FUNC_EXIT											False	
+811	Artificial_AST	AST_PARAM_LIST				1							False	
+812	Object	function											False	
+813	Name	NAMENODE									prototype		False	
+814	Object	object											False	
+815	Name	NAMENODE									__proto__		False	
+816	Name	NAMENODE									constructor		False	
+817	Name	NAMENODE									__proto__		False	
+818	Name	NAMENODE									constructor		False	
+819	Name	NAMENODE									map		False	
+820	Artificial_AST	AST_CLOSURE											False	
+821	Artificial_AST	string				0					reduce		False	
+822	Artificial	CFG_FUNC_ENTRY											False	
+823	Artificial	CFG_FUNC_EXIT											False	
+824	Artificial_AST	AST_PARAM_LIST				1							False	
+825	Object	function											False	
+826	Name	NAMENODE									prototype		False	
+827	Object	object											False	
+828	Name	NAMENODE									__proto__		False	
+829	Name	NAMENODE									constructor		False	
+830	Name	NAMENODE									__proto__		False	
+831	Name	NAMENODE									constructor		False	
+832	Name	NAMENODE									reduce		False	
+833	Artificial_AST	AST_CLOSURE											False	
+834	Artificial_AST	string				0					concat		False	
+835	Artificial	CFG_FUNC_ENTRY											False	
+836	Artificial	CFG_FUNC_EXIT											False	
+837	Artificial_AST	AST_PARAM_LIST				1							False	
+838	Object	function											False	
+839	Name	NAMENODE									prototype		False	
+840	Object	object											False	
+841	Name	NAMENODE									__proto__		False	
+842	Name	NAMENODE									constructor		False	
+843	Name	NAMENODE									__proto__		False	
+844	Name	NAMENODE									constructor		False	
+845	Name	NAMENODE									concat		False	
+846	Artificial_AST	AST_CLOSURE											False	
+847	Artificial_AST	string				0					Boolean		False	
+848	Artificial	CFG_FUNC_ENTRY											False	
+849	Artificial	CFG_FUNC_EXIT											False	
+850	Artificial_AST	AST_PARAM_LIST				1							False	
+851	Object	function											False	
+852	Name	NAMENODE									prototype		False	
+853	Object	object			Boolean.prototype								False	
+854	Name	NAMENODE									__proto__		False	
+855	Name	NAMENODE									constructor		False	
+856	Name	NAMENODE									__proto__		False	
+857	Name	NAMENODE									constructor		False	
+858	Name	NAMENODE									Boolean		False	
+859	Name	NAMENODE									Boolean		False	
+860	Artificial_AST	AST_CLOSURE											False	
+861	Artificial_AST	string				0					Symbol		False	
+862	Artificial	CFG_FUNC_ENTRY											False	
+863	Artificial	CFG_FUNC_EXIT											False	
+864	Artificial_AST	AST_PARAM_LIST				1							False	
+865	Object	function											False	
+866	Name	NAMENODE									prototype		False	
+867	Object	object			Symbol.prototype								False	
+868	Name	NAMENODE									__proto__		False	
+869	Name	NAMENODE									constructor		False	
+870	Name	NAMENODE									__proto__		False	
+871	Name	NAMENODE									constructor		False	
+872	Name	NAMENODE									Symbol		False	
+873	Name	NAMENODE									Symbol		False	
+874	Artificial_AST	AST_CLOSURE											False	
+875	Artificial_AST	string				0					Error		False	
+876	Artificial	CFG_FUNC_ENTRY											False	
+877	Artificial	CFG_FUNC_EXIT											False	
+878	Artificial_AST	AST_PARAM_LIST				1							False	
+879	Object	function											False	
+880	Name	NAMENODE									prototype		False	
+881	Object	object											False	
+882	Name	NAMENODE									__proto__		False	
+883	Name	NAMENODE									constructor		False	
+884	Name	NAMENODE									__proto__		False	
+885	Name	NAMENODE									constructor		False	
+886	Name	NAMENODE									Error		False	
+887	Name	NAMENODE									Error		False	
+888	Artificial_AST	AST_CLOSURE											False	
+889	Artificial_AST	string				0					parseInt		False	
+890	Artificial	CFG_FUNC_ENTRY											False	
+891	Artificial	CFG_FUNC_EXIT											False	
+892	Artificial_AST	AST_PARAM_LIST				1							False	
+893	Object	function											False	
+894	Name	NAMENODE									prototype		False	
+895	Object	object											False	
+896	Name	NAMENODE									__proto__		False	
+897	Name	NAMENODE									constructor		False	
+898	Name	NAMENODE									__proto__		False	
+899	Name	NAMENODE									constructor		False	
+900	Name	NAMENODE									parseInt		False	
+901	Name	NAMENODE									parseInt		False	
+902	Artificial_AST	AST_CLOSURE											False	
+903	Artificial_AST	string				0					parseFloat		False	
+904	Artificial	CFG_FUNC_ENTRY											False	
+905	Artificial	CFG_FUNC_EXIT											False	
+906	Artificial_AST	AST_PARAM_LIST				1							False	
+907	Object	function											False	
+908	Name	NAMENODE									prototype		False	
+909	Object	object											False	
+910	Name	NAMENODE									__proto__		False	
+911	Name	NAMENODE									constructor		False	
+912	Name	NAMENODE									__proto__		False	
+913	Name	NAMENODE									constructor		False	
+914	Name	NAMENODE									parseFloat		False	
+915	Name	NAMENODE									parseFloat		False	
+916	Artificial_AST	AST_CLOSURE											False	
+917	Artificial_AST	string				0					decodeURI		False	
+918	Artificial	CFG_FUNC_ENTRY											False	
+919	Artificial	CFG_FUNC_EXIT											False	
+920	Artificial_AST	AST_PARAM_LIST				1							False	
+921	Object	function											False	
+922	Name	NAMENODE									prototype		False	
+923	Object	object											False	
+924	Name	NAMENODE									__proto__		False	
+925	Name	NAMENODE									constructor		False	
+926	Name	NAMENODE									__proto__		False	
+927	Name	NAMENODE									constructor		False	
+928	Name	NAMENODE									decodeURI		False	
+929	Name	NAMENODE									decodeURI		False	
+930	Artificial_AST	AST_CLOSURE											False	
+931	Artificial_AST	string				0					decodeURIComponent		False	
+932	Artificial	CFG_FUNC_ENTRY											False	
+933	Artificial	CFG_FUNC_EXIT											False	
+934	Artificial_AST	AST_PARAM_LIST				1							False	
+935	Object	function											False	
+936	Name	NAMENODE									prototype		False	
+937	Object	object											False	
+938	Name	NAMENODE									__proto__		False	
+939	Name	NAMENODE									constructor		False	
+940	Name	NAMENODE									__proto__		False	
+941	Name	NAMENODE									constructor		False	
+942	Name	NAMENODE									decodeURIComponent		False	
+943	Name	NAMENODE									decodeURIComponent		False	
+944	Artificial_AST	AST_CLOSURE											False	
+945	Artificial_AST	string				0					encodeURI		False	
+946	Artificial	CFG_FUNC_ENTRY											False	
+947	Artificial	CFG_FUNC_EXIT											False	
+948	Artificial_AST	AST_PARAM_LIST				1							False	
+949	Object	function											False	
+950	Name	NAMENODE									prototype		False	
+951	Object	object											False	
+952	Name	NAMENODE									__proto__		False	
+953	Name	NAMENODE									constructor		False	
+954	Name	NAMENODE									__proto__		False	
+955	Name	NAMENODE									constructor		False	
+956	Name	NAMENODE									encodeURI		False	
+957	Name	NAMENODE									encodeURI		False	
+958	Artificial_AST	AST_CLOSURE											False	
+959	Artificial_AST	string				0					encodeURIComponent		False	
+960	Artificial	CFG_FUNC_ENTRY											False	
+961	Artificial	CFG_FUNC_EXIT											False	
+962	Artificial_AST	AST_PARAM_LIST				1							False	
+963	Object	function											False	
+964	Name	NAMENODE									prototype		False	
+965	Object	object											False	
+966	Name	NAMENODE									__proto__		False	
+967	Name	NAMENODE									constructor		False	
+968	Name	NAMENODE									__proto__		False	
+969	Name	NAMENODE									constructor		False	
+970	Name	NAMENODE									encodeURIComponent		False	
+971	Name	NAMENODE									encodeURIComponent		False	
+972	Artificial_AST	AST_CLOSURE											False	
+973	Artificial_AST	string				0					escape		False	
+974	Artificial	CFG_FUNC_ENTRY											False	
+975	Artificial	CFG_FUNC_EXIT											False	
+976	Artificial_AST	AST_PARAM_LIST				1							False	
+977	Object	function											False	
+978	Name	NAMENODE									prototype		False	
+979	Object	object											False	
+980	Name	NAMENODE									__proto__		False	
+981	Name	NAMENODE									constructor		False	
+982	Name	NAMENODE									__proto__		False	
+983	Name	NAMENODE									constructor		False	
+984	Name	NAMENODE									escape		False	
+985	Name	NAMENODE									escape		False	
+986	Artificial_AST	AST_CLOSURE											False	
+987	Artificial_AST	string				0					unescape		False	
+988	Artificial	CFG_FUNC_ENTRY											False	
+989	Artificial	CFG_FUNC_EXIT											False	
+990	Artificial_AST	AST_PARAM_LIST				1							False	
+991	Object	function											False	
+992	Name	NAMENODE									prototype		False	
+993	Object	object											False	
+994	Name	NAMENODE									__proto__		False	
+995	Name	NAMENODE									constructor		False	
+996	Name	NAMENODE									__proto__		False	
+997	Name	NAMENODE									constructor		False	
+998	Name	NAMENODE									unescape		False	
+999	Name	NAMENODE									unescape		False	
+1000	Artificial_AST	AST_CLOSURE											False	
+1001	Artificial_AST	string				0					setTimeout		False	
+1002	Artificial	CFG_FUNC_ENTRY											False	
+1003	Artificial	CFG_FUNC_EXIT											False	
+1004	Artificial_AST	AST_PARAM_LIST				1							False	
+1005	Object	function											False	
+1006	Name	NAMENODE									prototype		False	
+1007	Object	object											False	
+1008	Name	NAMENODE									__proto__		False	
+1009	Name	NAMENODE									constructor		False	
+1010	Name	NAMENODE									__proto__		False	
+1011	Name	NAMENODE									constructor		False	
+1012	Name	NAMENODE									setTimeout		False	
+1013	Name	NAMENODE									setTimeout		False	
+1014	Artificial_AST	AST_CLOSURE											False	
+1015	Artificial_AST	string				0					clearTimeout		False	
+1016	Artificial	CFG_FUNC_ENTRY											False	
+1017	Artificial	CFG_FUNC_EXIT											False	
+1018	Artificial_AST	AST_PARAM_LIST				1							False	
+1019	Object	function											False	
+1020	Name	NAMENODE									prototype		False	
+1021	Object	object											False	
+1022	Name	NAMENODE									__proto__		False	
+1023	Name	NAMENODE									constructor		False	
+1024	Name	NAMENODE									__proto__		False	
+1025	Name	NAMENODE									constructor		False	
+1026	Name	NAMENODE									clearTimeout		False	
+1027	Name	NAMENODE									clearTimeout		False	
+1028	Artificial_AST	AST_CLOSURE											False	
+1029	Artificial_AST	string				0					setInterval		False	
+1030	Artificial	CFG_FUNC_ENTRY											False	
+1031	Artificial	CFG_FUNC_EXIT											False	
+1032	Artificial_AST	AST_PARAM_LIST				1							False	
+1033	Object	function											False	
+1034	Name	NAMENODE									prototype		False	
+1035	Object	object											False	
+1036	Name	NAMENODE									__proto__		False	
+1037	Name	NAMENODE									constructor		False	
+1038	Name	NAMENODE									__proto__		False	
+1039	Name	NAMENODE									constructor		False	
+1040	Name	NAMENODE									setInterval		False	
+1041	Name	NAMENODE									setInterval		False	
+1042	Artificial_AST	AST_CLOSURE											False	
+1043	Artificial_AST	string				0					clearInterval		False	
+1044	Artificial	CFG_FUNC_ENTRY											False	
+1045	Artificial	CFG_FUNC_EXIT											False	
+1046	Artificial_AST	AST_PARAM_LIST				1							False	
+1047	Object	function											False	
+1048	Name	NAMENODE									prototype		False	
+1049	Object	object											False	
+1050	Name	NAMENODE									__proto__		False	
+1051	Name	NAMENODE									constructor		False	
+1052	Name	NAMENODE									__proto__		False	
+1053	Name	NAMENODE									constructor		False	
+1054	Name	NAMENODE									clearInterval		False	
+1055	Name	NAMENODE									clearInterval		False	
+1056	Artificial_AST	AST_CLOSURE											False	
+1057	Artificial_AST	string				0					require		False	
+1058	Artificial	CFG_FUNC_ENTRY											False	
+1059	Artificial	CFG_FUNC_EXIT											False	
+1060	Artificial_AST	AST_PARAM_LIST				1							False	
+1061	Object	function											False	
+1062	Name	NAMENODE									prototype		False	
+1063	Object	object											False	
+1064	Name	NAMENODE									__proto__		False	
+1065	Name	NAMENODE									constructor		False	
+1066	Name	NAMENODE									__proto__		False	
+1067	Name	NAMENODE									constructor		False	
+1068	Name	NAMENODE									require		False	
+1069	Name	NAMENODE									require		False	
+1070	Name	NAMENODE									console		False	
+1071	Object	object											False	
+1072	Name	NAMENODE									__proto__		False	
+1073	Name	NAMENODE									constructor		False	
+1074	Name	NAMENODE									console		False	
+1075	Artificial_AST	AST_CLOSURE											False	
+1076	Artificial_AST	string				0					log		False	
+1077	Artificial	CFG_FUNC_ENTRY											False	
+1078	Artificial	CFG_FUNC_EXIT											False	
+1079	Artificial_AST	AST_PARAM_LIST				1							False	
+1080	Object	function											False	
+1081	Name	NAMENODE									prototype		False	
+1082	Object	object											False	
+1083	Name	NAMENODE									__proto__		False	
+1084	Name	NAMENODE									constructor		False	
+1085	Name	NAMENODE									__proto__		False	
+1086	Name	NAMENODE									constructor		False	
+1087	Name	NAMENODE									log		False	
+1088	Artificial_AST	AST_CLOSURE											False	
+1089	Artificial_AST	string				0					error		False	
+1090	Artificial	CFG_FUNC_ENTRY											False	
+1091	Artificial	CFG_FUNC_EXIT											False	
+1092	Artificial_AST	AST_PARAM_LIST				1							False	
+1093	Object	function											False	
+1094	Name	NAMENODE									prototype		False	
+1095	Object	object											False	
+1096	Name	NAMENODE									__proto__		False	
+1097	Name	NAMENODE									constructor		False	
+1098	Name	NAMENODE									__proto__		False	
+1099	Name	NAMENODE									constructor		False	
+1100	Name	NAMENODE									error		False	
+1101	Name	NAMENODE									process		False	
+1102	Object	object			*								False	
+1103	Name	NAMENODE									__proto__		False	
+1104	Name	NAMENODE									constructor		False	
+1105	Name	NAMENODE									process		False	
+1106	Name	NAMENODE									argv		False	
+1107	Object	array			*								False	
+1108	Name	NAMENODE									__proto__		False	
+1109	Name	NAMENODE									constructor		False	
+1110	Name	NAMENODE									versions		False	
+1111	Object	object			*								False	
+1112	Name	NAMENODE									__proto__		False	
+1113	Name	NAMENODE									constructor		False	
+1114	Name	NAMENODE									modules		False	
+1115	Object	string			*								False	
+1116	Name	NAMENODE									__proto__		False	
+1117	Name	NAMENODE									constructor		False	
+1118	Name	NAMENODE									length		False	
+1119	Object	number			*								False	
+1120	Name	NAMENODE									platform		False	
+1121	Object	string			*								False	
+1122	Name	NAMENODE									__proto__		False	
+1123	Name	NAMENODE									constructor		False	
+1124	Name	NAMENODE									length		False	
+1125	Object	number			*								False	
+1126	Name	NAMENODE									arch		False	
+1127	Object	string			*								False	
+1128	Name	NAMENODE									__proto__		False	
+1129	Name	NAMENODE									constructor		False	
+1130	Name	NAMENODE									length		False	
+1131	Object	number			*								False	
+1132	Name	NAMENODE									JSON		False	
+1133	Object	object											False	
+1134	Name	NAMENODE									__proto__		False	
+1135	Name	NAMENODE									constructor		False	
+1136	Name	NAMENODE									JSON		False	
+1137	Artificial_AST	AST_CLOSURE											False	
+1138	Artificial_AST	string				0					parse		False	
+1139	Artificial	CFG_FUNC_ENTRY											False	
+1140	Artificial	CFG_FUNC_EXIT											False	
+1141	Artificial_AST	AST_PARAM_LIST				1							False	
+1142	Object	function											False	
+1143	Name	NAMENODE									prototype		False	
+1144	Object	object											False	
+1145	Name	NAMENODE									__proto__		False	
+1146	Name	NAMENODE									constructor		False	
+1147	Name	NAMENODE									__proto__		False	
+1148	Name	NAMENODE									constructor		False	
+1149	Name	NAMENODE									parse		False	
+1150	Artificial_AST	AST_CLOSURE											False	
+1151	Artificial_AST	string				0					stringify		False	
+1152	Artificial	CFG_FUNC_ENTRY											False	
+1153	Artificial	CFG_FUNC_EXIT											False	
+1154	Artificial_AST	AST_PARAM_LIST				1							False	
+1155	Object	function											False	
+1156	Name	NAMENODE									prototype		False	
+1157	Object	object											False	
+1158	Name	NAMENODE									__proto__		False	
+1159	Name	NAMENODE									constructor		False	
+1160	Name	NAMENODE									__proto__		False	
+1161	Name	NAMENODE									constructor		False	
+1162	Name	NAMENODE									stringify		False	
+1163	Artificial_AST	AST_CLOSURE											False	
+1164	Artificial_AST	string				0					RegExp		False	
+1165	Artificial	CFG_FUNC_ENTRY											False	
+1166	Artificial	CFG_FUNC_EXIT											False	
+1167	Artificial_AST	AST_PARAM_LIST				1							False	
+1168	Object	function											False	
+1169	Name	NAMENODE									prototype		False	
+1170	Object	object											False	
+1171	Name	NAMENODE									__proto__		False	
+1172	Name	NAMENODE									constructor		False	
+1173	Name	NAMENODE									__proto__		False	
+1174	Name	NAMENODE									constructor		False	
+1175	Name	NAMENODE									RegExp		False	
+1176	Name	NAMENODE									RegExp		False	
+1177	Artificial_AST	AST_CLOSURE											False	
+1178	Artificial_AST	string				0					exec		False	
+1179	Artificial	CFG_FUNC_ENTRY											False	
+1180	Artificial	CFG_FUNC_EXIT											False	
+1181	Artificial_AST	AST_PARAM_LIST				1							False	
+1182	Object	function											False	
+1183	Name	NAMENODE									prototype		False	
+1184	Object	object											False	
+1185	Name	NAMENODE									__proto__		False	
+1186	Name	NAMENODE									constructor		False	
+1187	Name	NAMENODE									__proto__		False	
+1188	Name	NAMENODE									constructor		False	
+1189	Name	NAMENODE									exec		False	
+1190	Artificial_AST	AST_CLOSURE											False	
+1191	Artificial_AST	string				0					test		False	
+1192	Artificial	CFG_FUNC_ENTRY											False	
+1193	Artificial	CFG_FUNC_EXIT											False	
+1194	Artificial_AST	AST_PARAM_LIST				1							False	
+1195	Object	function											False	
+1196	Name	NAMENODE									prototype		False	
+1197	Object	object											False	
+1198	Name	NAMENODE									__proto__		False	
+1199	Name	NAMENODE									constructor		False	
+1200	Name	NAMENODE									__proto__		False	
+1201	Name	NAMENODE									constructor		False	
+1202	Name	NAMENODE									test		False	
+1203	Name	NAMENODE									Math		False	
+1204	Object	object											False	
+1205	Name	NAMENODE									__proto__		False	
+1206	Name	NAMENODE									constructor		False	
+1207	Name	NAMENODE									Math		False	
+1208	Artificial_AST	AST_CLOSURE											False	
+1209	Artificial_AST	string				0					max		False	
+1210	Artificial	CFG_FUNC_ENTRY											False	
+1211	Artificial	CFG_FUNC_EXIT											False	
+1212	Artificial_AST	AST_PARAM_LIST				1							False	
+1213	Object	function											False	
+1214	Name	NAMENODE									prototype		False	
+1215	Object	object											False	
+1216	Name	NAMENODE									__proto__		False	
+1217	Name	NAMENODE									constructor		False	
+1218	Name	NAMENODE									__proto__		False	
+1219	Name	NAMENODE									constructor		False	
+1220	Name	NAMENODE									max		False	
+1221	Artificial_AST	AST_CLOSURE											False	
+1222	Artificial_AST	string				0					min		False	
+1223	Artificial	CFG_FUNC_ENTRY											False	
+1224	Artificial	CFG_FUNC_EXIT											False	
+1225	Artificial_AST	AST_PARAM_LIST				1							False	
+1226	Object	function											False	
+1227	Name	NAMENODE									prototype		False	
+1228	Object	object											False	
+1229	Name	NAMENODE									__proto__		False	
+1230	Name	NAMENODE									constructor		False	
+1231	Name	NAMENODE									__proto__		False	
+1232	Name	NAMENODE									constructor		False	
+1233	Name	NAMENODE									min		False	
+1234	Artificial_AST	AST_CLOSURE											False	
+1235	Artificial_AST	string				0					sqrt		False	
+1236	Artificial	CFG_FUNC_ENTRY											False	
+1237	Artificial	CFG_FUNC_EXIT											False	
+1238	Artificial_AST	AST_PARAM_LIST				1							False	
+1239	Object	function											False	
+1240	Name	NAMENODE									prototype		False	
+1241	Object	object											False	
+1242	Name	NAMENODE									__proto__		False	
+1243	Name	NAMENODE									constructor		False	
+1244	Name	NAMENODE									__proto__		False	
+1245	Name	NAMENODE									constructor		False	
+1246	Name	NAMENODE									sqrt		False	
+1247	Artificial_AST	AST_CLOSURE											False	
+1248	Artificial_AST	string				0					Promise		False	
+1249	Artificial	CFG_FUNC_ENTRY											False	
+1250	Artificial	CFG_FUNC_EXIT											False	
+1251	Artificial_AST	AST_PARAM_LIST				1							False	
+1252	Object	function											False	
+1253	Name	NAMENODE									prototype		False	
+1254	Object	object											False	
+1255	Name	NAMENODE									__proto__		False	
+1256	Name	NAMENODE									constructor		False	
+1257	Name	NAMENODE									__proto__		False	
+1258	Name	NAMENODE									constructor		False	
+1259	Name	NAMENODE									Promise		False	
+1260	Name	NAMENODE									Promise		False	
+1261	Artificial_AST	AST_CLOSURE											False	
+1262	Artificial_AST	string				0					then		False	
+1263	Artificial	CFG_FUNC_ENTRY											False	
+1264	Artificial	CFG_FUNC_EXIT											False	
+1265	Artificial_AST	AST_PARAM_LIST				1							False	
+1266	Object	function											False	
+1267	Name	NAMENODE									prototype		False	
+1268	Object	object											False	
+1269	Name	NAMENODE									__proto__		False	
+1270	Name	NAMENODE									constructor		False	
+1271	Name	NAMENODE									__proto__		False	
+1272	Name	NAMENODE									constructor		False	
+1273	Name	NAMENODE									then		False	
+1274	Artificial_AST	AST_CLOSURE											False	
+1275	Artificial_AST	string				0					catch		False	
+1276	Artificial	CFG_FUNC_ENTRY											False	
+1277	Artificial	CFG_FUNC_EXIT											False	
+1278	Artificial_AST	AST_PARAM_LIST				1							False	
+1279	Object	function											False	
+1280	Name	NAMENODE									prototype		False	
+1281	Object	object											False	
+1282	Name	NAMENODE									__proto__		False	
+1283	Name	NAMENODE									constructor		False	
+1284	Name	NAMENODE									__proto__		False	
+1285	Name	NAMENODE									constructor		False	
+1286	Name	NAMENODE									catch		False	
+1287	Artificial_AST	AST_CLOSURE											False	
+1288	Artificial_AST	string				0					finally		False	
+1289	Artificial	CFG_FUNC_ENTRY											False	
+1290	Artificial	CFG_FUNC_EXIT											False	
+1291	Artificial_AST	AST_PARAM_LIST				1							False	
+1292	Object	function											False	
+1293	Name	NAMENODE									prototype		False	
+1294	Object	object											False	
+1295	Name	NAMENODE									__proto__		False	
+1296	Name	NAMENODE									constructor		False	
+1297	Name	NAMENODE									__proto__		False	
+1298	Name	NAMENODE									constructor		False	
+1299	Name	NAMENODE									finally		False	
+1300	Artificial_AST	AST_CLOSURE											False	
+1301	Artificial_AST	string				0					resolve		False	
+1302	Artificial	CFG_FUNC_ENTRY											False	
+1303	Artificial	CFG_FUNC_EXIT											False	
+1304	Artificial_AST	AST_PARAM_LIST				1							False	
+1305	Object	function											False	
+1306	Name	NAMENODE									prototype		False	
+1307	Object	object											False	
+1308	Name	NAMENODE									__proto__		False	
+1309	Name	NAMENODE									constructor		False	
+1310	Name	NAMENODE									__proto__		False	
+1311	Name	NAMENODE									constructor		False	
+1312	Name	NAMENODE									resolve		False	
+1313	Artificial_AST	AST_CLOSURE											False	
+1314	Artificial_AST	string				0					Date		False	
+1315	Artificial	CFG_FUNC_ENTRY											False	
+1316	Artificial	CFG_FUNC_EXIT											False	
+1317	Artificial_AST	AST_PARAM_LIST				1							False	
+1318	Object	function											False	
+1319	Name	NAMENODE									prototype		False	
+1320	Object	object											False	
+1321	Name	NAMENODE									__proto__		False	
+1322	Name	NAMENODE									constructor		False	
+1323	Name	NAMENODE									__proto__		False	
+1324	Name	NAMENODE									constructor		False	
+1325	Name	NAMENODE									Date		False	
+1326	Name	NAMENODE									Date		False	
+1327	Name	NAMENODE									__opgWildcard		False	
+1328	Object	object			*								False	
+1329	Name	NAMENODE									__proto__		False	
+1330	Name	NAMENODE									constructor		False	
+1331	Name	NAMENODE									__opgWildcard		False	
+1332	Object	undefined			undefined								True	
+1333	Name	NAMENODE									undefined		True	
+1334	Name	NAMENODE									undefined		True	
+1335	Object	number			Infinity								True	
+1336	Name	NAMENODE									Infinity		True	
+1337	Name	NAMENODE									Infinity		True	
+1338	Object	number			-Infinity								True	
+1339	Object	number			nan								True	
+1340	Name	NAMENODE									NaN		True	
+1341	Name	NAMENODE									NaN		True	
+1342	Object	function									stdin		True	
+1343	Name	NAMENODE									prototype		True	
+1344	Object	object											True	
+1345	Name	NAMENODE									__proto__		True	
+1346	Name	NAMENODE									constructor		True	
+1347	Name	NAMENODE									__proto__		True	
+1348	Name	NAMENODE									constructor		True	
+1349	Name	NAMENODE									stdin		True	
+1350	Name	NAMENODE									stdin		True	
+1351	Name	NAMENODE									name		True	
+1352	Object	string			stdin								True	
+1353	Name	NAMENODE									__proto__		True	
+1354	Name	NAMENODE									constructor		True	
+1355	Name	NAMENODE									length		True	
+1356	Object	number			5								True	
+1357	Name	NAMENODE									length		True	
+1358	Object	number			0								True	
+1359	Scope	FILE_SCOPE									File1:0		True	
+1360	Name	NAMENODE									module		True	
+1361	Object	object											True	
+1362	Name	NAMENODE									__proto__		True	
+1363	Name	NAMENODE									constructor		True	
+1364	Name	NAMENODE									exports		True	
+1365	Object	object											True	
+1366	Name	NAMENODE									__proto__		True	
+1367	Name	NAMENODE									constructor		True	
+1368	Name	NAMENODE									exports		True	
+1369	Name	NAMENODE									this		True	
+1370	Scope	BLOCK_SCOPE									Block4:0		True	
+1371	Name	NAMENODE									main_func		True	
+1372	Object	function									/pppj/src/mutate/staticPlusSymbolic/example_1.js		True	
+1373	Name	NAMENODE									prototype		True	
+1374	Object	object											True	
+1375	Name	NAMENODE									__proto__		True	
+1376	Name	NAMENODE									constructor		True	
+1377	Name	NAMENODE									__proto__		True	
+1378	Name	NAMENODE									constructor		True	
+1379	Name	NAMENODE									/pppj/src/mutate/staticPlusSymbolic/example_1.js		True	
+1380	Name	NAMENODE									/pppj/src/mutate/staticPlusSymbolic/example_1.js		True	
+1381	Name	NAMENODE									name		True	
+1382	Object	string			/pppj/src/mutate/staticPlusSymbolic/example_1.js								True	
+1383	Name	NAMENODE									__proto__		True	
+1384	Name	NAMENODE									constructor		True	
+1385	Name	NAMENODE									length		True	
+1386	Object	number			48								True	
+1387	Name	NAMENODE									length		True	
+1388	Object	number			0								True	
+1389	Scope	FILE_SCOPE									File14:0		True	
+1390	Name	NAMENODE									module		True	
+1391	Object	object											True	
+1392	Name	NAMENODE									__proto__		True	
+1393	Name	NAMENODE									constructor		True	
+1394	Name	NAMENODE									exports		True	
+1395	Object	object											True	
+1396	Name	NAMENODE									__proto__		True	
+1397	Name	NAMENODE									constructor		True	
+1398	Name	NAMENODE									exports		True	
+1399	Name	NAMENODE									this		True	
+1400	Scope	BLOCK_SCOPE									Block17:0		True	
+1401	Object	function									computeComplex		True	
+1402	Name	NAMENODE									prototype		True	
+1403	Object	object											True	
+1404	Name	NAMENODE									__proto__		True	
+1405	Name	NAMENODE									constructor		True	
+1406	Name	NAMENODE									__proto__		True	
+1407	Name	NAMENODE									constructor		True	
+1408	Name	NAMENODE									computeComplex		True	
+1409	Name	NAMENODE									name		True	
+1410	Object	string			computeComplex								True	
+1411	Name	NAMENODE									__proto__		True	
+1412	Name	NAMENODE									constructor		True	
+1413	Name	NAMENODE									length		True	
+1414	Object	number			14								True	
+1415	Name	NAMENODE									length		True	
+1416	Object	number			2								True	
+1417	Object	function									processInputsAndCheckHash		True	
+1418	Name	NAMENODE									prototype		True	
+1419	Object	object											True	
+1420	Name	NAMENODE									__proto__		True	
+1421	Name	NAMENODE									constructor		True	
+1422	Name	NAMENODE									__proto__		True	
+1423	Name	NAMENODE									constructor		True	
+1424	Name	NAMENODE									processInputsAndCheckHash		True	
+1425	Name	NAMENODE									name		True	
+1426	Object	string			processInputsAndCheckHash								True	
+1427	Name	NAMENODE									__proto__		True	
+1428	Name	NAMENODE									constructor		True	
+1429	Name	NAMENODE									length		True	
+1430	Object	number			25								True	
+1431	Name	NAMENODE									length		True	
+1432	Object	number			2								True	
+1433	Name	NAMENODE									crypto		True	
+1434	Scope	FUNC_SCOPE									Function101:None		True	
+1435	Name	NAMENODE									arguments		True	
+1436	Object	array											True	
+1437	Name	NAMENODE									__proto__		True	
+1438	Name	NAMENODE									constructor		True	
+1439	Name	NAMENODE									A		True	
+1440	Object	object			*								True	True
+1441	Name	NAMENODE									0		True	
+1442	Name	NAMENODE									B		True	
+1443	Object	object			*								True	True
+1444	Name	NAMENODE									1		True	
+1445	Object	object			*								True	True
+1446	Name	NAMENODE									2		True	
+1447	Name	NAMENODE									length		True	
+1448	Object	number			3								True	
+1449	Object	object											True	
+1450	Name	NAMENODE									__proto__		True	
+1451	Scope	BLOCK_SCOPE									Block115:0		True	
+1452	Scope	FUNC_SCOPE									Function26:119		True	
+1453	Name	NAMENODE									arguments		True	
+1454	Object	array											True	
+1455	Name	NAMENODE									__proto__		True	
+1456	Name	NAMENODE									constructor		True	
+1457	Name	NAMENODE									0		True	
+1458	Name	NAMENODE									A		True	
+1459	Name	NAMENODE									1		True	
+1460	Name	NAMENODE									B		True	
+1461	Object	object			*								True	
+1462	Name	NAMENODE									2		True	
+1463	Name	NAMENODE									length		True	
+1464	Object	number			3								True	
+1465	Scope	BLOCK_SCOPE									Block40:0		True	
+1466	Name	NAMENODE									result		True	
+1467	Object	number			0.0								True	
+1468	Scope	BLOCK_SCOPE									Block51:0		True	
+1469	Scope	BLOCK_SCOPE									Block62:0		True	
+1470	Scope	BLOCK_SCOPE									Block70:0		True	
+1471	Object	string			*								True	True
+1472	Name	NAMENODE									__proto__		True	
+1473	Name	NAMENODE									constructor		True	
+1474	Name	NAMENODE									length		True	
+1475	Object	number			*								True	
+1476	Scope	BLOCK_SCOPE									Block80:0		True	
+1477	Object	string			*								True	True
+1478	Name	NAMENODE									__proto__		True	
+1479	Name	NAMENODE									constructor		True	
+1480	Name	NAMENODE									length		True	
+1481	Object	number			*								True	
+1482	Object	string			falsefalse								True	
+1483	Name	NAMENODE									__proto__		True	
+1484	Name	NAMENODE									constructor		True	
+1485	Name	NAMENODE									length		True	
+1486	Object	number			10								True	
+1487	Object	string			falsetrue								True	
+1488	Name	NAMENODE									__proto__		True	
+1489	Name	NAMENODE									constructor		True	
+1490	Name	NAMENODE									length		True	
+1491	Object	number			9								True	
+1492	Object	string			*								True	True
+1493	Name	NAMENODE									__proto__		True	
+1494	Name	NAMENODE									constructor		True	
+1495	Name	NAMENODE									length		True	
+1496	Object	number			*								True	
+1497	Object	string			*								True	True
+1498	Name	NAMENODE									__proto__		True	
+1499	Name	NAMENODE									constructor		True	
+1500	Name	NAMENODE									length		True	
+1501	Object	number			*								True	
+1502	Object	string			*								True	True
+1503	Name	NAMENODE									__proto__		True	
+1504	Name	NAMENODE									constructor		True	
+1505	Name	NAMENODE									length		True	
+1506	Object	number			*								True	
+1507	Object	string			*								True	True
+1508	Name	NAMENODE									__proto__		True	
+1509	Name	NAMENODE									constructor		True	
+1510	Name	NAMENODE									length		True	
+1511	Object	number			*								True	
+1512	Object	string			truefalse								True	
+1513	Name	NAMENODE									__proto__		True	
+1514	Name	NAMENODE									constructor		True	
+1515	Name	NAMENODE									length		True	
+1516	Object	number			9								True	
+1517	Object	string			truetrue								True	
+1518	Name	NAMENODE									__proto__		True	
+1519	Name	NAMENODE									constructor		True	
+1520	Name	NAMENODE									length		True	
+1521	Object	number			8								True	
+1522	Name	NAMENODE									C		True	
+1523	Name	NAMENODE									expectedHash		True	
+1524	Object	string			a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3								True	
+1525	Name	NAMENODE									__proto__		True	
+1526	Name	NAMENODE									constructor		True	
+1527	Name	NAMENODE									length		True	
+1528	Object	number			64								True	
+1529	Name	NAMENODE									sink_jsfuzz		True	
+1530	Artificial_AST	AST_CLOSURE											True	
+1531	Artificial_AST	string				0					sink_jsfuzz		True	
+1532	Artificial	CFG_FUNC_ENTRY											True	
+1533	Artificial	CFG_FUNC_EXIT											True	
+1534	Artificial_AST	AST_PARAM_LIST				1							True	
+1535	Object	function											True	
+1536	Name	NAMENODE									prototype		True	
+1537	Object	object											True	
+1538	Name	NAMENODE									__proto__		True	
+1539	Name	NAMENODE									constructor		True	
+1540	Name	NAMENODE									__proto__		True	
+1541	Name	NAMENODE									constructor		True	
+1542	Scope	FUNC_SCOPE									Function1530:131		True	
+1543	Name	NAMENODE									arguments		True	
+1544	Object	array											True	
+1545	Name	NAMENODE									__proto__		True	
+1546	Name	NAMENODE									constructor		True	
+1547	Name	NAMENODE									0		True	
+1548	Object	object			*								True	
+1549	Name	NAMENODE									1		True	
+1550	Object	object			*								True	
+1551	Name	NAMENODE									2		True	
+1552	Name	NAMENODE									length		True	
+1553	Object	number			3								True	
+1554	Object	object			*								True	True
+1555	Name	NAMENODE									__proto__		True	
+1556	Name	NAMENODE									constructor		True	
+1557	Object	object			*								True	
+1558	Name	NAMENODE									__proto__		True	
+1559	Name	NAMENODE									constructor		True	
+1560	Name	NAMENODE									*		True	
+1561	Object	object			*								True	
+1562	Artificial_AST	AST_CLOSURE											True	
+1563	Artificial_AST	string				0					crypto.createHash		True	
+1564	Artificial	CFG_FUNC_ENTRY											True	
+1565	Artificial	CFG_FUNC_EXIT											True	
+1566	Artificial_AST	AST_PARAM_LIST				1							True	
+1567	Name	NAMENODE									prototype		True	
+1568	Object	object											True	
+1569	Name	NAMENODE									__proto__		True	
+1570	Name	NAMENODE									constructor		True	
+1571	Name	NAMENODE									__proto__		True	
+1572	Scope	FUNC_SCOPE									Function1562:142		True	
+1573	Name	NAMENODE									arguments		True	
+1574	Object	array											True	
+1575	Name	NAMENODE									__proto__		True	
+1576	Name	NAMENODE									constructor		True	
+1577	Object	string			sha256								True	
+1578	Name	NAMENODE									__proto__		True	
+1579	Name	NAMENODE									constructor		True	
+1580	Name	NAMENODE									length		True	
+1581	Object	number			6								True	
+1582	Name	NAMENODE									0		True	
+1583	Object	object			*								True	
+1584	Name	NAMENODE									1		True	
+1585	Object	object			*								True	
+1586	Name	NAMENODE									2		True	
+1587	Name	NAMENODE									length		True	
+1588	Object	number			3								True	
+1589	Object	object			*								True	
+1590	Name	NAMENODE									__proto__		True	
+1591	Name	NAMENODE									constructor		True	
+1592	Name	NAMENODE									*		True	
+1593	Object	object			*								True	
+1594	Artificial_AST	AST_CLOSURE											True	
+1595	Artificial_AST	string				0					crypto.createHash('sha256').update		True	
+1596	Artificial	CFG_FUNC_ENTRY											True	
+1597	Artificial	CFG_FUNC_EXIT											True	
+1598	Artificial_AST	AST_PARAM_LIST				1							True	
+1599	Name	NAMENODE									prototype		True	
+1600	Object	object											True	
+1601	Name	NAMENODE									__proto__		True	
+1602	Name	NAMENODE									constructor		True	
+1603	Name	NAMENODE									__proto__		True	
+1604	Scope	FUNC_SCOPE									Function1594:141		True	
+1605	Name	NAMENODE									arguments		True	
+1606	Object	array											True	
+1607	Name	NAMENODE									__proto__		True	
+1608	Name	NAMENODE									constructor		True	
+1609	Name	NAMENODE									0		True	
+1610	Object	object			*								True	
+1611	Name	NAMENODE									1		True	
+1612	Object	object			*								True	
+1613	Name	NAMENODE									2		True	
+1614	Name	NAMENODE									length		True	
+1615	Object	number			3								True	
+1616	Object	object			*								True	True
+1617	Name	NAMENODE									__proto__		True	
+1618	Name	NAMENODE									constructor		True	
+1619	Name	NAMENODE									*		True	
+1620	Object	object			*								True	True
+1621	Artificial_AST	AST_CLOSURE											True	
+1622	Artificial_AST	string				0					crypto.createHash('sha256').update(String(C)).digest		True	
+1623	Artificial	CFG_FUNC_ENTRY											True	
+1624	Artificial	CFG_FUNC_EXIT											True	
+1625	Artificial_AST	AST_PARAM_LIST				1							True	
+1626	Name	NAMENODE									prototype		True	
+1627	Object	object											True	
+1628	Name	NAMENODE									__proto__		True	
+1629	Name	NAMENODE									constructor		True	
+1630	Name	NAMENODE									__proto__		True	
+1631	Scope	FUNC_SCOPE									Function1621:140		True	
+1632	Name	NAMENODE									arguments		True	
+1633	Object	array											True	
+1634	Name	NAMENODE									__proto__		True	
+1635	Name	NAMENODE									constructor		True	
+1636	Object	string			hex								True	
+1637	Name	NAMENODE									__proto__		True	
+1638	Name	NAMENODE									constructor		True	
+1639	Name	NAMENODE									length		True	
+1640	Object	number			3								True	
+1641	Name	NAMENODE									0		True	
+1642	Object	object			*								True	
+1643	Name	NAMENODE									1		True	
+1644	Object	object			*								True	
+1645	Name	NAMENODE									2		True	
+1646	Name	NAMENODE									length		True	
+1647	Object	number			3								True	
+1648	Object	object			*								True	True
+1649	Name	NAMENODE									__proto__		True	
+1650	Name	NAMENODE									constructor		True	
+1651	Scope	BLOCK_SCOPE									Block161:0		True	
+1652	Scope	BLOCK_SCOPE									Block168:0		True	

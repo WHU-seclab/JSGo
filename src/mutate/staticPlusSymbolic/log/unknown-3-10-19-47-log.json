@@ -1,0 +1,20 @@
+{
+    "source": "/pppj/src/mutate/staticPlusSymbolic/example_2.js",
+    "start": 1710071269905,
+    "end": 1710071275673,
+    "firstHit": "-1",
+    "undefinedMap": {},
+    "done": [
+        {
+            "id": 0,
+            "input": {
+                "_bound": 0
+            },
+            "stringifiedPC": "",
+            "foundGagdet": false,
+            "alternatives": [],
+            "helperPool": [],
+            "time": 5759
+        }
+    ]
+}

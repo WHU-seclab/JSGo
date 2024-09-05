@@ -1,0 +1,25 @@
+{
+  "SwaggerSpecFilePath": [
+    "/parse-server/api-docs.json"
+  ],
+  "GrammarOutputDirectoryPath": "/restler-fuzzer/restler_bin/Compile",
+  "CustomDictionaryFilePath": "/restler-fuzzer/restler_bin/restlerConfig/dict.json",
+  "AnnotationFilePath": "/restler-fuzzer/restler_bin/restlerConfig/annotations.json",
+  "EngineSettingsFilePath": "/restler-fuzzer/restler_bin/restlerConfig/engine_settings.json",
+  "IncludeOptionalParameters": true,
+  "UseHeaderExamples": true,
+  "UsePathExamples": false,
+  "UseQueryExamples": true,
+  "UseBodyExamples": true,
+  "UseAllExamplePayloads": false,
+  "DiscoverExamples": false,
+  "ExamplesDirectory": "",
+  "DataFuzzing": true,
+  "ReadOnlyFuzz": false,
+  "ResolveQueryDependencies": true,
+  "ResolveBodyDependencies": true,
+  "ResolveHeaderDependencies": false,
+  "UseRefreshableToken": true,
+  "AllowGetProducers": false,
+  "TrackFuzzedParameterNames": false
+}
