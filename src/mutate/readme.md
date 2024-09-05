@@ -74,7 +74,7 @@ The example demonstrates how to configure two `config.json` to exploit a prototy
 
 In `example.sh`, `main.py` is invoked twice with two different `config.json` files. 
 
-```
+```bash
 python main.py pp/config.json
 python main.py pp/config1.json
 ```
