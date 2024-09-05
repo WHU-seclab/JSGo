@@ -79,7 +79,6 @@ python main.py pp/config.json
 python main.py pp/config1.json
 ```
 
-
 - The first invocation mutates the initial input, causing its execution to satisfy the first diverging condition.
 - Subsequently, the second invocation manipulates the API generated from the first run. This manipulation ensures that its execution satisfies the second (also final) diverging condition, ultimately leading to triggering the prototype vulnerability at the specified sink location.
 
