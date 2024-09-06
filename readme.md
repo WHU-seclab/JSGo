@@ -16,4 +16,6 @@ You need to compile **jsgo-restler-fuzzer** as its binary isn't uploaded to the 
 We list our study results in Section 2 of `study.xlsx`.
 
 ## Docker Image:
-We will prepare and provide a Docker image for the usage of JSGo upon paper acceptance.
+```docker pull chluo/jsgo:v1```
+
+JSGo is under ```/pppj``` folder. You do not need to install any dependencies for JSGo as we have installed it in Docker. However, if you want to test more applications, you need to install them.
