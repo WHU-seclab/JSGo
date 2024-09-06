@@ -83,3 +83,4 @@ In `example.sh`, `main.py` is invoked twice with two different `config.json` fil
 - The first invocation mutates the initial input, causing its execution to satisfy the first diverging condition.
 - Subsequently, the second invocation manipulates the API generated from the first run. This manipulation ensures that its execution satisfies the second (also final) diverging condition, ultimately leading to triggering the prototype vulnerability at the specified sink location.
 
+Before you run these scripts, ensure that you can start the application. In the docker image, you need run ```mongodb-runner start``` and ```mongod --dbpath /var/lib/mongo --logpath /var/log/mongodb/mongod.log --fork``` that are the requirements for starting the application. However, you do not run the application while running main.py.
