@@ -11,7 +11,7 @@ The code produces end-to-end inputs capable of:
 Users must fill in the `config.json` file with the following information:
 
 1. **Variable Names**: 
-   - Description: Denotes variables used in the deviation condition.
+   - Description: Denotes variables used in the deviation condition or in the sink operation.
    - Format: Comma-separated list of variable names.
    - Example: `"variable_names": "variable1, variable2"`
 
